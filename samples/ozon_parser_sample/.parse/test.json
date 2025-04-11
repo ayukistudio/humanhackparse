@@ -1,0 +1,2765 @@
+{
+  "tileLayout": "LAYOUT_GRID4",
+  "items": [
+    {
+      "action": {
+        "behavior": "BEHAVIOR_TYPE_REDIRECT",
+        "link": "\u002Fproduct\u002Fgnezdo-na-platu-pbd-80-ds-1023-2x40-pryamoe-chernoe-10-sht-1444030137\u002F?asb=TUprdl0ejU3ev7SIp7FUgHZUYhXk0HWRTfCgwG7%252BgPM%253D&asb2=0RAqaWbj6tI-MIkF_uEiqOPMCcfxp-92AbweXgV5PULKmLs40qAuP4c0a1mhYO1M&avtc=1&avte=2&avts=1729885413&keywords=pbd2-80",
+        "params": {
+          "target": "_blank"
+        }
+      },
+      "isAdult": false,
+      "mainState": [
+        {
+          "type": "atom",
+          "id": "atom",
+          "atom": {
+            "type": "priceV2",
+            "priceV2": {
+              "price": [
+                {
+                  "text": "439 ₽",
+                  "textStyle": "PRICE"
+                },
+                {
+                  "text": "731 ₽",
+                  "textStyle": "ORIGINAL_PRICE"
+                }
+              ],
+              "discount": "−40%",
+              "priceStyle": {
+                "styleType": "CARD_PRICE"
+              },
+              "preset": "SIZE_500",
+              "paddingBottom": "PADDING_200"
+            }
+          }
+        },
+        {
+          "atom": {
+            "type": "labelList",
+            "labelList": {
+              "items": [
+                {
+                  "title": "44 ₽ \u002F шт",
+                  "titleColor": "ozTextPrimary",
+                  "testInfo": {
+                    "automatizationId": "tile-list-ppu"
+                  }
+                }
+              ],
+              "textStyle": "tsBodyM",
+              "maxLines": 1,
+              "align": "ALIGN_LEFT",
+              "testInfo": {
+                "automatizationId": "tile-list-labels"
+              }
+            }
+          }
+        },
+        {
+          "type": "atom",
+          "id": "name",
+          "atom": {
+            "type": "textAtom",
+            "textAtom": {
+              "text": "Гнездо на плату PBD-80 (DS-1023 - 2x40), прямое черное, 10 шт.",
+              "textStyle": "tsBodyL",
+              "maxLines": 2,
+              "testInfo": {
+                "automatizationId": "tile-name"
+              }
+            }
+          }
+        },
+        {
+          "atom": {
+            "type": "labelList",
+            "labelList": {
+              "items": [
+                {
+                  "icon": {
+                    "image": "ic_s_star_filled_compact",
+                    "tintColor": "ozRating"
+                  },
+                  "title": "5.0  ",
+                  "titleColor": "textPremium",
+                  "testInfo": {
+                    "automatizationId": "tile-list-rating"
+                  }
+                },
+                {
+                  "icon": {
+                    "image": "ic_s_dialog_filled_compact",
+                    "tintColor": "graphicTertiary"
+                  },
+                  "title": "1 отзыв",
+                  "titleColor": "ozTextSecondary",
+                  "testInfo": {
+                    "automatizationId": "tile-list-comments"
+                  }
+                }
+              ],
+              "textStyle": "tsBodyMBold",
+              "maxLines": 1,
+              "align": "ALIGN_LEFT",
+              "testInfo": {
+                "automatizationId": "tile-list-rating"
+              }
+            }
+          }
+        }
+      ],
+      "multiButton": {
+        "theme": "THEME_TYPE_VERTICAL",
+        "ozonButton": {
+          "type": "addToCartButtonWithQuantity",
+          "addToCartButtonWithQuantity": {
+            "text": "3 ноября",
+            "maxItems": 17,
+            "currentItems": 1,
+            "action": {
+              "id": "1444030137",
+              "quantity": 1
+            },
+            "trackingInfo": {
+              "click": {
+                "actionType": "to_cart",
+                "key": "x6tP2X5z9CQ4RRlcOml6m7fJR3r8jfkp90P2FX6kZ44"
+              }
+            },
+            "testInfo": {
+              "automatizationId": "ozonAddToCart"
+            },
+            "theme": "STYLE_TYPE_PRIMARY",
+            "mode": "UPDATE_MODE_STEP",
+            "buttonIconId": "ic_m_grocery_cart_filled",
+            "sellerIcon": {
+              "sellerIconId": "ic_m_premium_circle_filled",
+              "sellerIconBgColor": "#ffffff",
+              "tintColor": "#ffb800"
+            },
+            "qtyTextDisabled": true,
+            "buttonSizeMode": "SIZE_MODE_FILL"
+          }
+        }
+      },
+      "skuId": "1444030137",
+      "tileDefer": 0,
+      "tileImage": {
+        "imageRatio": "1:1",
+        "pinchToZoomTrackingInfo": {
+          "click": {
+            "actionType": "imagePinch",
+            "key": "x6tP2X5z9CQ4RRlcOml6m7fJR3r8jfkp90P2FX6kZ44"
+          },
+          "view": {
+            "actionType": "onboardingView",
+            "key": "x6tP2X5z9CQ4RRlcOml6m7fJR3r8jfkp90P2FX6kZ44"
+          }
+        },
+        "items": [
+          {
+            "type": "image",
+            "image": {
+              "link": "https:\u002F\u002Fcdn1.ozone.ru\u002Fs3\u002Fmultimedia-1-k\u002F6937975280.jpg",
+              "contentMode": "SCALE_ASPECT_FIT"
+            }
+          }
+        ],
+        "leftBottomBadge": {
+          "text": "Постоплата",
+          "image": "ic_m_money_to_card_filled",
+          "tintColor": "textLightKey",
+          "iconTintColor": "graphicLightKey",
+          "backgroundColor": "bgOzonPrimary",
+          "testInfo": {
+            "automatizationId": "badge-postPayment"
+          },
+          "theme": "STYLE_TYPE_MEDIUM",
+          "iconPosition": "ICON_POSITION_LEFT"
+        },
+        "secondLeftBottomBadge": {
+          "text": "Цена что надо",
+          "image": "ic_s_like_filled_compact",
+          "tintColor": "textLightKey",
+          "iconTintColor": "graphicLightKey",
+          "backgroundColor": "bgPositivePrimary",
+          "testInfo": {
+            "automatizationId": "badge-priceIndex"
+          },
+          "theme": "STYLE_TYPE_MEDIUM",
+          "iconPosition": "ICON_POSITION_LEFT"
+        }
+      },
+      "topRightButtons": [
+        {
+          "type": "favoriteProductMoleculeV2",
+          "favoriteProductMoleculeV2": {
+            "id": "1444030137",
+            "isFav": false,
+            "favListsLink": "ozon:\u002F\u002Fmodal\u002FfavoritesListsSelect?sku=1444030137",
+            "trackingInfo": {
+              "click": {
+                "actionType": "favorite",
+                "key": "x6tP2X5z9CQ4RRlcOml6m7fJR3r8jfkp90P2FX6kZ44"
+              }
+            },
+            "testInfo": {
+              "favoriteButton": {
+                "automatizationId": "favorite-button"
+              },
+              "unFavoriteButton": {
+                "automatizationId": "unfavorite-button"
+              }
+            }
+          }
+        }
+      ],
+      "trackingInfo": {
+        "aux_click": {
+          "actionType": "aux_click",
+          "key": "x6tP2X5z9CQ4RRlcOml6m7fJR3r8jfkp90P2FX6kZ44"
+        },
+        "click": {
+          "actionType": "click",
+          "key": "x6tP2X5z9CQ4RRlcOml6m7fJR3r8jfkp90P2FX6kZ44"
+        },
+        "right_click": {
+          "actionType": "right_click",
+          "key": "x6tP2X5z9CQ4RRlcOml6m7fJR3r8jfkp90P2FX6kZ44"
+        },
+        "view": {
+          "actionType": "view",
+          "key": "x6tP2X5z9CQ4RRlcOml6m7fJR3r8jfkp90P2FX6kZ44"
+        }
+      }
+    },
+    {
+      "action": {
+        "behavior": "BEHAVIOR_TYPE_REDIRECT",
+        "link": "\u002Fproduct\u002Ffiltr-maslyanyy-benzin-ssang-yong-actyon-new-rexton-korando-cang-eng-aktion-rekston-konrando-555357910\u002F?asb=6ZKweKlhp6%252BSy8XMvAg9F497TRc5OVQEFTCdrVkXdzU%253D&asb2=Z6pKkv7IMacX18A6VtwlWT4vtGHsySPgUoqF9ka1-EgZEoUqpsKPBvncnsTDvjo_i4HBQapkz4_EOpmUXw_2Yg&avtc=1&avte=2&avts=1729885413&keywords=pbd2-80",
+        "params": {
+          "target": "_blank"
+        }
+      },
+      "isAdult": false,
+      "mainState": [
+        {
+          "type": "atom",
+          "id": "atom",
+          "atom": {
+            "type": "priceV2",
+            "priceV2": {
+              "price": [
+                {
+                  "text": "511 ₽",
+                  "textStyle": "PRICE"
+                },
+                {
+                  "text": "6 480 ₽",
+                  "textStyle": "ORIGINAL_PRICE"
+                }
+              ],
+              "discount": "−92%",
+              "priceStyle": {
+                "styleType": "SALE_PRICE",
+                "gradient": {
+                  "startColor": "#F81155",
+                  "endColor": "#F81155"
+                }
+              },
+              "preset": "SIZE_500",
+              "paddingBottom": "PADDING_200"
+            }
+          }
+        },
+        {
+          "type": "atom",
+          "id": "atom",
+          "atom": {
+            "type": "stockBar",
+            "stockBar": {
+              "theme": "THEME_TYPE_MEDIUM",
+              "text": "Осталось 1 шт",
+              "textColor": "ozTextPrimary",
+              "percent": 50,
+              "stockBarColor": "ozRed"
+            }
+          }
+        },
+        {
+          "type": "atom",
+          "id": "name",
+          "atom": {
+            "type": "textAtom",
+            "textAtom": {
+              "text": "Фильтр масляный бензин Ssang Yong Actyon new, Rexton, Korando &amp;#x2F; Cанг Енг Актион, Рекстон, Конрандо; 1721803009; PBD011",
+              "textStyle": "tsBodyL",
+              "maxLines": 2,
+              "testInfo": {
+                "automatizationId": "tile-name"
+              }
+            }
+          }
+        },
+        {
+          "atom": {
+            "type": "labelList",
+            "labelList": {
+              "items": [
+                {
+                  "icon": {
+                    "image": "ic_s_star_filled_compact",
+                    "tintColor": "ozRating"
+                  },
+                  "title": "4.9  ",
+                  "titleColor": "textPremium",
+                  "testInfo": {
+                    "automatizationId": "tile-list-rating"
+                  }
+                },
+                {
+                  "icon": {
+                    "image": "ic_s_dialog_filled_compact",
+                    "tintColor": "graphicTertiary"
+                  },
+                  "title": "1 371 отзыв",
+                  "titleColor": "ozTextSecondary",
+                  "testInfo": {
+                    "automatizationId": "tile-list-comments"
+                  }
+                }
+              ],
+              "textStyle": "tsBodyMBold",
+              "maxLines": 1,
+              "align": "ALIGN_LEFT",
+              "testInfo": {
+                "automatizationId": "tile-list-rating"
+              }
+            }
+          }
+        }
+      ],
+      "multiButton": {
+        "theme": "THEME_TYPE_VERTICAL",
+        "ozonButton": {
+          "type": "addToCartButtonWithQuantity",
+          "addToCartButtonWithQuantity": {
+            "text": "Завтра",
+            "maxItems": 63,
+            "currentItems": 0,
+            "action": {
+              "id": "555357910",
+              "quantity": 1
+            },
+            "trackingInfo": {
+              "click": {
+                "actionType": "to_cart",
+                "key": "w0tgDNE2AuzvlNxRfKWJrB5SVm7XgWh6RJyvmT2WO6Zz"
+              }
+            },
+            "testInfo": {
+              "automatizationId": "ozonAddToCart"
+            },
+            "theme": "STYLE_TYPE_PRIMARY",
+            "mode": "UPDATE_MODE_STEP",
+            "buttonIconId": "ic_m_grocery_cart_filled",
+            "sellerIcon": {
+              "sellerIconId": "ic_m_premium_circle_filled",
+              "sellerIconBgColor": "#ffffff",
+              "tintColor": "#ffb800"
+            },
+            "qtyTextDisabled": true,
+            "buttonSizeMode": "SIZE_MODE_FILL"
+          }
+        }
+      },
+      "skuId": "555357910",
+      "tileDefer": 0,
+      "tileImage": {
+        "imageRatio": "1:1",
+        "pinchToZoomTrackingInfo": {
+          "click": {
+            "actionType": "imagePinch",
+            "key": "w0tgDNE2AuzvlNxRfKWJrB5SVm7XgWh6RJyvmT2WO6Zz"
+          },
+          "view": {
+            "actionType": "onboardingView",
+            "key": "w0tgDNE2AuzvlNxRfKWJrB5SVm7XgWh6RJyvmT2WO6Zz"
+          }
+        },
+        "items": [
+          {
+            "type": "image",
+            "image": {
+              "link": "https:\u002F\u002Fcdn1.ozone.ru\u002Fs3\u002Fmultimedia-1-n\u002F7134737819.jpg",
+              "contentMode": "SCALE_ASPECT_FIT"
+            }
+          },
+          {
+            "type": "image",
+            "image": {
+              "link": "https:\u002F\u002Fcdn1.ozone.ru\u002Fs3\u002Fmultimedia-1-n\u002F7134737747.jpg",
+              "contentMode": "SCALE_ASPECT_FIT"
+            }
+          },
+          {
+            "type": "image",
+            "image": {
+              "link": "https:\u002F\u002Fcdn1.ozone.ru\u002Fs3\u002Fmultimedia-1-3\u002F7134737799.jpg",
+              "contentMode": "SCALE_ASPECT_FIT"
+            }
+          },
+          {
+            "type": "image",
+            "image": {
+              "link": "https:\u002F\u002Fcdn1.ozone.ru\u002Fs3\u002Fmultimedia-1-5\u002F7134737765.jpg",
+              "contentMode": "SCALE_ASPECT_FIT"
+            }
+          }
+        ],
+        "leftBottomBadge": {
+          "text": "Постоплата",
+          "image": "ic_m_money_to_card_filled",
+          "tintColor": "textLightKey",
+          "iconTintColor": "graphicLightKey",
+          "backgroundColor": "bgOzonPrimary",
+          "testInfo": {
+            "automatizationId": "badge-postPayment"
+          },
+          "theme": "STYLE_TYPE_MEDIUM",
+          "iconPosition": "ICON_POSITION_LEFT"
+        },
+        "secondLeftBottomBadge": {
+          "text": "Распродажа",
+          "image": "ic_s_hot_filled_compact",
+          "tintColor": "#ffffff",
+          "iconTintColor": "#ffffff",
+          "backgroundColor": "#F81155",
+          "testInfo": {
+            "automatizationId": "badge-marketingSuperHigh"
+          },
+          "theme": "STYLE_TYPE_MEDIUM",
+          "iconPosition": "ICON_POSITION_LEFT"
+        }
+      },
+      "topRightButtons": [
+        {
+          "type": "favoriteProductMoleculeV2",
+          "favoriteProductMoleculeV2": {
+            "id": "555357910",
+            "isFav": false,
+            "favListsLink": "ozon:\u002F\u002Fmodal\u002FfavoritesListsSelect?sku=555357910",
+            "trackingInfo": {
+              "click": {
+                "actionType": "favorite",
+                "key": "w0tgDNE2AuzvlNxRfKWJrB5SVm7XgWh6RJyvmT2WO6Zz"
+              }
+            },
+            "testInfo": {
+              "favoriteButton": {
+                "automatizationId": "favorite-button"
+              },
+              "unFavoriteButton": {
+                "automatizationId": "unfavorite-button"
+              }
+            }
+          }
+        }
+      ],
+      "trackingInfo": {
+        "aux_click": {
+          "actionType": "aux_click",
+          "key": "w0tgDNE2AuzvlNxRfKWJrB5SVm7XgWh6RJyvmT2WO6Zz"
+        },
+        "click": {
+          "actionType": "click",
+          "key": "w0tgDNE2AuzvlNxRfKWJrB5SVm7XgWh6RJyvmT2WO6Zz"
+        },
+        "right_click": {
+          "actionType": "right_click",
+          "key": "w0tgDNE2AuzvlNxRfKWJrB5SVm7XgWh6RJyvmT2WO6Zz"
+        },
+        "view": {
+          "actionType": "view",
+          "key": "w0tgDNE2AuzvlNxRfKWJrB5SVm7XgWh6RJyvmT2WO6Zz"
+        }
+      }
+    },
+    {
+      "action": {
+        "behavior": "BEHAVIOR_TYPE_REDIRECT",
+        "link": "\u002Fproduct\u002F2-shtuki-razem-2-54mm-pbd-80-pbd-2x40-1282490784\u002F?asb=PRD9TBPuZOE8j90qZczWR1KWUAfDE%252BHb6RDkNLCjotE%253D&asb2=2JltbP7TH7K46OsF7HPWmv2FrdZLjovtMVuRi1hLN6daV9sCz_-r4TTUun0ygrTn7-5qdtYss_jxqtCKbP1dMg&avtc=1&avte=2&avts=1729885413&keywords=pbd2-80",
+        "params": {
+          "target": "_blank"
+        }
+      },
+      "isAdult": false,
+      "mainState": [
+        {
+          "type": "atom",
+          "id": "atom",
+          "atom": {
+            "type": "priceV2",
+            "priceV2": {
+              "price": [
+                {
+                  "text": "325 ₽",
+                  "textStyle": "PRICE"
+                },
+                {
+                  "text": "723 ₽",
+                  "textStyle": "ORIGINAL_PRICE"
+                }
+              ],
+              "discount": "−55%",
+              "priceStyle": {
+                "styleType": "SALE_PRICE",
+                "gradient": {
+                  "startColor": "#F81155",
+                  "endColor": "#F81155"
+                }
+              },
+              "preset": "SIZE_500",
+              "paddingBottom": "PADDING_200"
+            }
+          }
+        },
+        {
+          "type": "atom",
+          "id": "atom",
+          "atom": {
+            "type": "stockBar",
+            "stockBar": {
+              "theme": "THEME_TYPE_MEDIUM",
+              "text": "Осталось 16 шт",
+              "textColor": "ozTextPrimary",
+              "percent": 100,
+              "stockBarColor": "ozRed"
+            }
+          }
+        },
+        {
+          "type": "atom",
+          "id": "name",
+          "atom": {
+            "type": "textAtom",
+            "textAtom": {
+              "text": "2 штуки Разъем 2.54мм PBD-80 (PBD 2x40)",
+              "textStyle": "tsBodyL",
+              "maxLines": 2,
+              "testInfo": {
+                "automatizationId": "tile-name"
+              }
+            }
+          }
+        },
+        {
+          "atom": {
+            "type": "labelList",
+            "labelList": {
+              "items": [
+                {
+                  "icon": {
+                    "image": "ic_s_star_filled_compact",
+                    "tintColor": "ozRating"
+                  },
+                  "title": "5.0  ",
+                  "titleColor": "textPremium",
+                  "testInfo": {
+                    "automatizationId": "tile-list-rating"
+                  }
+                },
+                {
+                  "icon": {
+                    "image": "ic_s_dialog_filled_compact",
+                    "tintColor": "graphicTertiary"
+                  },
+                  "title": "2 отзыва",
+                  "titleColor": "ozTextSecondary",
+                  "testInfo": {
+                    "automatizationId": "tile-list-comments"
+                  }
+                }
+              ],
+              "textStyle": "tsBodyMBold",
+              "maxLines": 1,
+              "align": "ALIGN_LEFT",
+              "testInfo": {
+                "automatizationId": "tile-list-rating"
+              }
+            }
+          }
+        }
+      ],
+      "multiButton": {
+        "theme": "THEME_TYPE_VERTICAL",
+        "ozonButton": {
+          "type": "addToCartButtonWithQuantity",
+          "addToCartButtonWithQuantity": {
+            "text": "30 октября",
+            "maxItems": 16,
+            "currentItems": 0,
+            "action": {
+              "id": "1282490784",
+              "quantity": 1
+            },
+            "trackingInfo": {
+              "click": {
+                "actionType": "to_cart",
+                "key": "46tRp82qmHVmZrq8fBM90R7uKpOWvOCopPgnDTQYJJm"
+              }
+            },
+            "testInfo": {
+              "automatizationId": "ozonAddToCart"
+            },
+            "theme": "STYLE_TYPE_PRIMARY",
+            "mode": "UPDATE_MODE_STEP",
+            "buttonIconId": "ic_m_grocery_cart_filled",
+            "sellerIcon": {
+              "sellerIconId": "ic_m_premium_circle_filled",
+              "sellerIconBgColor": "#ffffff",
+              "tintColor": "#ffb800"
+            },
+            "qtyTextDisabled": true,
+            "buttonSizeMode": "SIZE_MODE_FILL"
+          }
+        }
+      },
+      "skuId": "1282490784",
+      "tileDefer": 0,
+      "tileImage": {
+        "imageRatio": "1:1",
+        "pinchToZoomTrackingInfo": {
+          "click": {
+            "actionType": "imagePinch",
+            "key": "46tRp82qmHVmZrq8fBM90R7uKpOWvOCopPgnDTQYJJm"
+          },
+          "view": {
+            "actionType": "onboardingView",
+            "key": "46tRp82qmHVmZrq8fBM90R7uKpOWvOCopPgnDTQYJJm"
+          }
+        },
+        "items": [
+          {
+            "type": "image",
+            "image": {
+              "link": "https:\u002F\u002Fcdn1.ozone.ru\u002Fs3\u002Fmultimedia-n\u002F6827439587.jpg",
+              "contentMode": "SCALE_ASPECT_FIT"
+            }
+          }
+        ],
+        "leftBottomBadge": {
+          "text": "Постоплата",
+          "image": "ic_m_money_to_card_filled",
+          "tintColor": "textLightKey",
+          "iconTintColor": "graphicLightKey",
+          "backgroundColor": "bgOzonPrimary",
+          "testInfo": {
+            "automatizationId": "badge-postPayment"
+          },
+          "theme": "STYLE_TYPE_MEDIUM",
+          "iconPosition": "ICON_POSITION_LEFT"
+        },
+        "secondLeftBottomBadge": {
+          "text": "Распродажа",
+          "image": "ic_s_hot_filled_compact",
+          "tintColor": "#ffffff",
+          "iconTintColor": "#ffffff",
+          "backgroundColor": "#F81155",
+          "testInfo": {
+            "automatizationId": "badge-marketingSuperHigh"
+          },
+          "theme": "STYLE_TYPE_MEDIUM",
+          "iconPosition": "ICON_POSITION_LEFT"
+        }
+      },
+      "topRightButtons": [
+        {
+          "type": "favoriteProductMoleculeV2",
+          "favoriteProductMoleculeV2": {
+            "id": "1282490784",
+            "isFav": false,
+            "favListsLink": "ozon:\u002F\u002Fmodal\u002FfavoritesListsSelect?sku=1282490784",
+            "trackingInfo": {
+              "click": {
+                "actionType": "favorite",
+                "key": "46tRp82qmHVmZrq8fBM90R7uKpOWvOCopPgnDTQYJJm"
+              }
+            },
+            "testInfo": {
+              "favoriteButton": {
+                "automatizationId": "favorite-button"
+              },
+              "unFavoriteButton": {
+                "automatizationId": "unfavorite-button"
+              }
+            }
+          }
+        }
+      ],
+      "trackingInfo": {
+        "aux_click": {
+          "actionType": "aux_click",
+          "key": "46tRp82qmHVmZrq8fBM90R7uKpOWvOCopPgnDTQYJJm"
+        },
+        "click": {
+          "actionType": "click",
+          "key": "46tRp82qmHVmZrq8fBM90R7uKpOWvOCopPgnDTQYJJm"
+        },
+        "right_click": {
+          "actionType": "right_click",
+          "key": "46tRp82qmHVmZrq8fBM90R7uKpOWvOCopPgnDTQYJJm"
+        },
+        "view": {
+          "actionType": "view",
+          "key": "46tRp82qmHVmZrq8fBM90R7uKpOWvOCopPgnDTQYJJm"
+        }
+      }
+    },
+    {
+      "action": {
+        "behavior": "BEHAVIOR_TYPE_REDIRECT",
+        "link": "\u002Fproduct\u002Fpbd2-80-ds-1026-06-2x40-gnezdo-na-platu-2mm-2h40pin-pryamoe-2-shtuki-1065122111\u002F?asb=SHyRe849BNzwso5SX8pwbugLyA5QsGH3JjXhYMtYmbM%253D&asb2=0GnTGt6KqaS_FFfaXph9lfXO3zLi8iNjmdMwYBIEY0DUqAbVdvA-QDoFbZdmVlbsd-xFeVtYO1klwKIyOYjVSA&avtc=1&avte=2&avts=1729885413&keywords=pbd2-80",
+        "params": {
+          "target": "_blank"
+        }
+      },
+      "isAdult": false,
+      "mainState": [
+        {
+          "type": "atom",
+          "id": "atom",
+          "atom": {
+            "type": "priceV2",
+            "priceV2": {
+              "price": [
+                {
+                  "text": "524 ₽",
+                  "textStyle": "PRICE"
+                },
+                {
+                  "text": "1 807 ₽",
+                  "textStyle": "ORIGINAL_PRICE"
+                }
+              ],
+              "discount": "−71%",
+              "priceStyle": {
+                "styleType": "CARD_PRICE"
+              },
+              "preset": "SIZE_500",
+              "paddingBottom": "PADDING_200"
+            }
+          }
+        },
+        {
+          "atom": {
+            "type": "labelList",
+            "labelList": {
+              "items": [
+                {
+                  "icon": {
+                    "image": "ic_s_download_filled_compact",
+                    "tintColor": "ozCtrlPositive"
+                  },
+                  "title": "Стало дешевле",
+                  "titleColor": "",
+                  "testInfo": {
+                    "automatizationId": "tile-list-price-dropped"
+                  }
+                }
+              ],
+              "textStyle": "tsBodyM",
+              "maxLines": 1,
+              "align": "ALIGN_LEFT",
+              "testInfo": {
+                "automatizationId": "tile-list-labels"
+              }
+            }
+          }
+        },
+        {
+          "type": "atom",
+          "id": "name",
+          "atom": {
+            "type": "textAtom",
+            "textAtom": {
+              "text": "PBD2-80 (DS-1026-06 - 2X40), Гнездо на плату 2мм 2х40pin прямое &amp;#x2F; 2 штуки",
+              "textStyle": "tsBodyL",
+              "maxLines": 2,
+              "testInfo": {
+                "automatizationId": "tile-name"
+              }
+            }
+          }
+        }
+      ],
+      "multiButton": {
+        "theme": "THEME_TYPE_VERTICAL",
+        "ozonButton": {
+          "type": "addToCartButtonWithQuantity",
+          "addToCartButtonWithQuantity": {
+            "text": "5 ноября",
+            "maxItems": 21,
+            "currentItems": 0,
+            "action": {
+              "id": "1065122111",
+              "quantity": 1
+            },
+            "trackingInfo": {
+              "click": {
+                "actionType": "to_cart",
+                "key": "DqtDRxLynfxNnEZ1UEoxrLkFjAgn8JU393E3Kf24JrQ1"
+              }
+            },
+            "testInfo": {
+              "automatizationId": "ozonAddToCart"
+            },
+            "theme": "STYLE_TYPE_PRIMARY",
+            "mode": "UPDATE_MODE_STEP",
+            "buttonIconId": "ic_m_grocery_cart_filled",
+            "qtyTextDisabled": true,
+            "buttonSizeMode": "SIZE_MODE_FILL"
+          }
+        }
+      },
+      "skuId": "1065122111",
+      "tileDefer": 0,
+      "tileImage": {
+        "imageRatio": "1:1",
+        "pinchToZoomTrackingInfo": {
+          "click": {
+            "actionType": "imagePinch",
+            "key": "DqtDRxLynfxNnEZ1UEoxrLkFjAgn8JU393E3Kf24JrQ1"
+          },
+          "view": {
+            "actionType": "onboardingView",
+            "key": "DqtDRxLynfxNnEZ1UEoxrLkFjAgn8JU393E3Kf24JrQ1"
+          }
+        },
+        "items": [
+          {
+            "type": "image",
+            "image": {
+              "link": "https:\u002F\u002Fcdn1.ozone.ru\u002Fs3\u002Fmultimedia-y\u002F6696643606.jpg",
+              "contentMode": "SCALE_ASPECT_FIT"
+            }
+          }
+        ],
+        "leftBottomBadge": {
+          "text": "Постоплата",
+          "image": "ic_m_money_to_card_filled",
+          "tintColor": "textLightKey",
+          "iconTintColor": "graphicLightKey",
+          "backgroundColor": "bgOzonPrimary",
+          "testInfo": {
+            "automatizationId": "badge-postPayment"
+          },
+          "theme": "STYLE_TYPE_MEDIUM",
+          "iconPosition": "ICON_POSITION_LEFT"
+        }
+      },
+      "topRightButtons": [
+        {
+          "type": "favoriteProductMoleculeV2",
+          "favoriteProductMoleculeV2": {
+            "id": "1065122111",
+            "isFav": false,
+            "favListsLink": "ozon:\u002F\u002Fmodal\u002FfavoritesListsSelect?sku=1065122111",
+            "trackingInfo": {
+              "click": {
+                "actionType": "favorite",
+                "key": "DqtDRxLynfxNnEZ1UEoxrLkFjAgn8JU393E3Kf24JrQ1"
+              }
+            },
+            "testInfo": {
+              "favoriteButton": {
+                "automatizationId": "favorite-button"
+              },
+              "unFavoriteButton": {
+                "automatizationId": "unfavorite-button"
+              }
+            }
+          }
+        }
+      ],
+      "trackingInfo": {
+        "aux_click": {
+          "actionType": "aux_click",
+          "key": "DqtDRxLynfxNnEZ1UEoxrLkFjAgn8JU393E3Kf24JrQ1"
+        },
+        "click": {
+          "actionType": "click",
+          "key": "DqtDRxLynfxNnEZ1UEoxrLkFjAgn8JU393E3Kf24JrQ1"
+        },
+        "right_click": {
+          "actionType": "right_click",
+          "key": "DqtDRxLynfxNnEZ1UEoxrLkFjAgn8JU393E3Kf24JrQ1"
+        },
+        "view": {
+          "actionType": "view",
+          "key": "DqtDRxLynfxNnEZ1UEoxrLkFjAgn8JU393E3Kf24JrQ1"
+        }
+      }
+    },
+    {
+      "action": {
+        "behavior": "BEHAVIOR_TYPE_REDIRECT",
+        "link": "\u002Fproduct\u002Fabordage-podtyazhki-1570644765\u002F?asb=5cEAFrqPlU%252BAKC5BRvFEUUFXlddXui9kEgoTswiRxDo%253D&asb2=wSuyR7o6Bvil0IakOpRbDgQ2GWmr0NxyWZmmzmO3IYccqYhjXeVEjDf7sXbFHk08Cif_c9byI4zQVwzvewYxgg&avtc=1&avte=2&avts=1729885413&keywords=pbd2-80",
+        "params": {
+          "target": "_blank"
+        }
+      },
+      "isAdult": false,
+      "mainState": [
+        {
+          "type": "atom",
+          "id": "atom",
+          "atom": {
+            "type": "priceV2",
+            "priceV2": {
+              "price": [
+                {
+                  "text": "379 ₽",
+                  "textStyle": "PRICE"
+                },
+                {
+                  "text": "899 ₽",
+                  "textStyle": "ORIGINAL_PRICE"
+                }
+              ],
+              "discount": "−58%",
+              "priceStyle": {
+                "styleType": "CARD_PRICE"
+              },
+              "preset": "SIZE_500",
+              "paddingBottom": "PADDING_200"
+            }
+          }
+        },
+        {
+          "type": "atom",
+          "id": "name",
+          "atom": {
+            "type": "textAtom",
+            "textAtom": {
+              "text": "ABORDAGE Подтяжки",
+              "textStyle": "tsBodyL",
+              "maxLines": 2,
+              "testInfo": {
+                "automatizationId": "tile-name"
+              }
+            }
+          }
+        },
+        {
+          "atom": {
+            "type": "labelList",
+            "labelList": {
+              "items": [
+                {
+                  "icon": {
+                    "image": "ic_s_star_filled_compact",
+                    "tintColor": "ozRating"
+                  },
+                  "title": "4.8  ",
+                  "titleColor": "textPremium",
+                  "testInfo": {
+                    "automatizationId": "tile-list-rating"
+                  }
+                },
+                {
+                  "icon": {
+                    "image": "ic_s_dialog_filled_compact",
+                    "tintColor": "graphicTertiary"
+                  },
+                  "title": "319 отзывов",
+                  "titleColor": "ozTextSecondary",
+                  "testInfo": {
+                    "automatizationId": "tile-list-comments"
+                  }
+                }
+              ],
+              "textStyle": "tsBodyMBold",
+              "maxLines": 1,
+              "align": "ALIGN_LEFT",
+              "testInfo": {
+                "automatizationId": "tile-list-rating"
+              }
+            }
+          }
+        }
+      ],
+      "multiButton": {
+        "theme": "THEME_TYPE_VERTICAL",
+        "ozonButton": {
+          "type": "addToCartButtonWithQuantity",
+          "addToCartButtonWithQuantity": {
+            "text": "Завтра",
+            "maxItems": 700,
+            "currentItems": 0,
+            "action": {
+              "id": "1570644765",
+              "quantity": 1
+            },
+            "trackingInfo": {
+              "click": {
+                "actionType": "to_cart",
+                "key": "EqtkQq8YgFq0LkwYSBj4AKLC83z36ouk1M7LwuEVAWy"
+              }
+            },
+            "testInfo": {
+              "automatizationId": "ozonAddToCart"
+            },
+            "theme": "STYLE_TYPE_PRIMARY",
+            "mode": "UPDATE_MODE_STEP",
+            "buttonIconId": "ic_m_grocery_cart_filled",
+            "sellerIcon": {
+              "sellerIconId": "ic_m_premium_circle_filled",
+              "sellerIconBgColor": "#ffffff",
+              "tintColor": "#ffb800"
+            },
+            "qtyTextDisabled": true,
+            "buttonSizeMode": "SIZE_MODE_FILL"
+          }
+        }
+      },
+      "skuId": "1570644765",
+      "tileDefer": 0,
+      "tileImage": {
+        "imageRatio": "1:1",
+        "pinchToZoomTrackingInfo": {
+          "click": {
+            "actionType": "imagePinch",
+            "key": "EqtkQq8YgFq0LkwYSBj4AKLC83z36ouk1M7LwuEVAWy"
+          },
+          "view": {
+            "actionType": "onboardingView",
+            "key": "EqtkQq8YgFq0LkwYSBj4AKLC83z36ouk1M7LwuEVAWy"
+          }
+        },
+        "items": [
+          {
+            "type": "image",
+            "image": {
+              "link": "https:\u002F\u002Fcdn1.ozone.ru\u002Fs3\u002Fmultimedia-1-b\u002F7024493783.jpg",
+              "contentMode": "SCALE_ASPECT_FIT"
+            }
+          },
+          {
+            "type": "image",
+            "image": {
+              "link": "https:\u002F\u002Fcdn1.ozone.ru\u002Fs3\u002Fmultimedia-1-1\u002F7045385221.jpg",
+              "contentMode": "SCALE_ASPECT_FIT"
+            }
+          },
+          {
+            "type": "image",
+            "image": {
+              "link": "https:\u002F\u002Fcdn1.ozone.ru\u002Fs3\u002Fmultimedia-1-d\u002F7045385197.jpg",
+              "contentMode": "SCALE_ASPECT_FIT"
+            }
+          },
+          {
+            "type": "image",
+            "image": {
+              "link": "https:\u002F\u002Fcdn1.ozone.ru\u002Fs3\u002Fmultimedia-1-g\u002F7045385272.jpg",
+              "contentMode": "SCALE_ASPECT_FIT"
+            }
+          },
+          {
+            "type": "image",
+            "image": {
+              "link": "https:\u002F\u002Fcdn1.ozone.ru\u002Fs3\u002Fmultimedia-1-4\u002F7045385224.jpg",
+              "contentMode": "SCALE_ASPECT_FIT"
+            }
+          },
+          {
+            "type": "image",
+            "image": {
+              "link": "https:\u002F\u002Fcdn1.ozone.ru\u002Fs3\u002Fmultimedia-1-5\u002F7045385225.jpg",
+              "contentMode": "SCALE_ASPECT_FIT"
+            }
+          }
+        ],
+        "leftBottomBadge": {
+          "text": "Постоплата",
+          "image": "ic_m_money_to_card_filled",
+          "tintColor": "textLightKey",
+          "iconTintColor": "graphicLightKey",
+          "backgroundColor": "bgOzonPrimary",
+          "testInfo": {
+            "automatizationId": "badge-postPayment"
+          },
+          "theme": "STYLE_TYPE_MEDIUM",
+          "iconPosition": "ICON_POSITION_LEFT"
+        }
+      },
+      "topRightButtons": [
+        {
+          "type": "favoriteProductMoleculeV2",
+          "favoriteProductMoleculeV2": {
+            "id": "1570644765",
+            "isFav": false,
+            "favListsLink": "ozon:\u002F\u002Fmodal\u002FfavoritesListsSelect?sku=1570644765",
+            "trackingInfo": {
+              "click": {
+                "actionType": "favorite",
+                "key": "EqtkQq8YgFq0LkwYSBj4AKLC83z36ouk1M7LwuEVAWy"
+              }
+            },
+            "testInfo": {
+              "favoriteButton": {
+                "automatizationId": "favorite-button"
+              },
+              "unFavoriteButton": {
+                "automatizationId": "unfavorite-button"
+              }
+            }
+          }
+        }
+      ],
+      "trackingInfo": {
+        "aux_click": {
+          "actionType": "aux_click",
+          "key": "EqtkQq8YgFq0LkwYSBj4AKLC83z36ouk1M7LwuEVAWy"
+        },
+        "click": {
+          "actionType": "click",
+          "key": "EqtkQq8YgFq0LkwYSBj4AKLC83z36ouk1M7LwuEVAWy"
+        },
+        "right_click": {
+          "actionType": "right_click",
+          "key": "EqtkQq8YgFq0LkwYSBj4AKLC83z36ouk1M7LwuEVAWy"
+        },
+        "view": {
+          "actionType": "view",
+          "key": "EqtkQq8YgFq0LkwYSBj4AKLC83z36ouk1M7LwuEVAWy"
+        }
+      }
+    },
+    {
+      "action": {
+        "behavior": "BEHAVIOR_TYPE_REDIRECT",
+        "link": "\u002Fproduct\u002F1-sht-shtyri-razemy-i-gnezda-dlya-plat-2-00mm-pbd2-80-pbd2-2x40-2-00-mm-702858882\u002F?asb=eiBvF7lbhLvpzlYIbLsAsi9CxQz1BAB0DXVL8BH7O9g%253D&asb2=wy6FtgU2WdqXHMbQkBtsEsxz4pC5QNvO2Fl9F8AyV31CZe2ScFLhIg706XF5mN3PoFuRUmCgMftIsuAxZIXQZA&avtc=1&avte=2&avts=1729885413&keywords=pbd2-80",
+        "params": {
+          "target": "_blank"
+        }
+      },
+      "isAdult": false,
+      "mainState": [
+        {
+          "type": "atom",
+          "id": "atom",
+          "atom": {
+            "type": "priceV2",
+            "priceV2": {
+              "price": [
+                {
+                  "text": "352 ₽",
+                  "textStyle": "PRICE"
+                },
+                {
+                  "text": "453 ₽",
+                  "textStyle": "ORIGINAL_PRICE"
+                }
+              ],
+              "discount": "−22%",
+              "priceStyle": {
+                "styleType": "CARD_PRICE"
+              },
+              "preset": "SIZE_500",
+              "paddingBottom": "PADDING_200"
+            }
+          }
+        },
+        {
+          "atom": {
+            "type": "labelList",
+            "labelList": {
+              "items": [
+                {
+                  "icon": {
+                    "image": "ic_s_download_filled_compact",
+                    "tintColor": "ozCtrlPositive"
+                  },
+                  "title": "Стало дешевле",
+                  "titleColor": "",
+                  "testInfo": {
+                    "automatizationId": "tile-list-price-dropped"
+                  }
+                }
+              ],
+              "textStyle": "tsBodyM",
+              "maxLines": 1,
+              "align": "ALIGN_LEFT",
+              "testInfo": {
+                "automatizationId": "tile-list-labels"
+              }
+            }
+          }
+        },
+        {
+          "type": "atom",
+          "id": "name",
+          "atom": {
+            "type": "textAtom",
+            "textAtom": {
+              "text": "1 шт Штыри разъемы и гнезда для плат 2.00мм PBD2-80 (PBD2-2x40) 2.00 mm",
+              "textStyle": "tsBodyL",
+              "maxLines": 2,
+              "testInfo": {
+                "automatizationId": "tile-name"
+              }
+            }
+          }
+        },
+        {
+          "atom": {
+            "type": "labelList",
+            "labelList": {
+              "items": [
+                {
+                  "icon": {
+                    "image": "ic_s_star_filled_compact",
+                    "tintColor": "ozRating"
+                  },
+                  "title": "5.0  ",
+                  "titleColor": "textPremium",
+                  "testInfo": {
+                    "automatizationId": "tile-list-rating"
+                  }
+                },
+                {
+                  "icon": {
+                    "image": "ic_s_dialog_filled_compact",
+                    "tintColor": "graphicTertiary"
+                  },
+                  "title": "1 отзыв",
+                  "titleColor": "ozTextSecondary",
+                  "testInfo": {
+                    "automatizationId": "tile-list-comments"
+                  }
+                }
+              ],
+              "textStyle": "tsBodyMBold",
+              "maxLines": 1,
+              "align": "ALIGN_LEFT",
+              "testInfo": {
+                "automatizationId": "tile-list-rating"
+              }
+            }
+          }
+        }
+      ],
+      "multiButton": {
+        "theme": "THEME_TYPE_VERTICAL",
+        "ozonButton": {
+          "type": "addToCartButtonWithQuantity",
+          "addToCartButtonWithQuantity": {
+            "text": "1 ноября",
+            "maxItems": 48,
+            "currentItems": 0,
+            "action": {
+              "id": "702858882",
+              "quantity": 1
+            },
+            "trackingInfo": {
+              "click": {
+                "actionType": "to_cart",
+                "key": "BrtzgnXyMfNO02Emhk1OX54c2n5xjrhJVpkDjc5BOZZ1"
+              }
+            },
+            "testInfo": {
+              "automatizationId": "ozonAddToCart"
+            },
+            "theme": "STYLE_TYPE_PRIMARY",
+            "mode": "UPDATE_MODE_STEP",
+            "buttonIconId": "ic_m_grocery_cart_filled",
+            "sellerIcon": {
+              "sellerIconId": "ic_m_premium_circle_filled",
+              "sellerIconBgColor": "#ffffff",
+              "tintColor": "#ffb800"
+            },
+            "qtyTextDisabled": true,
+            "buttonSizeMode": "SIZE_MODE_FILL"
+          }
+        }
+      },
+      "skuId": "702858882",
+      "tileDefer": 0,
+      "tileImage": {
+        "imageRatio": "1:1",
+        "pinchToZoomTrackingInfo": {
+          "click": {
+            "actionType": "imagePinch",
+            "key": "BrtzgnXyMfNO02Emhk1OX54c2n5xjrhJVpkDjc5BOZZ1"
+          },
+          "view": {
+            "actionType": "onboardingView",
+            "key": "BrtzgnXyMfNO02Emhk1OX54c2n5xjrhJVpkDjc5BOZZ1"
+          }
+        },
+        "items": [
+          {
+            "type": "image",
+            "image": {
+              "link": "https:\u002F\u002Fcdn1.ozone.ru\u002Fs3\u002Fmultimedia-o\u002F6401829540.jpg",
+              "contentMode": "SCALE_ASPECT_FIT"
+            }
+          }
+        ],
+        "leftBottomBadge": {
+          "text": "Постоплата",
+          "image": "ic_m_money_to_card_filled",
+          "tintColor": "textLightKey",
+          "iconTintColor": "graphicLightKey",
+          "backgroundColor": "bgOzonPrimary",
+          "testInfo": {
+            "automatizationId": "badge-postPayment"
+          },
+          "theme": "STYLE_TYPE_MEDIUM",
+          "iconPosition": "ICON_POSITION_LEFT"
+        }
+      },
+      "topRightButtons": [
+        {
+          "type": "favoriteProductMoleculeV2",
+          "favoriteProductMoleculeV2": {
+            "id": "702858882",
+            "isFav": false,
+            "favListsLink": "ozon:\u002F\u002Fmodal\u002FfavoritesListsSelect?sku=702858882",
+            "trackingInfo": {
+              "click": {
+                "actionType": "favorite",
+                "key": "BrtzgnXyMfNO02Emhk1OX54c2n5xjrhJVpkDjc5BOZZ1"
+              }
+            },
+            "testInfo": {
+              "favoriteButton": {
+                "automatizationId": "favorite-button"
+              },
+              "unFavoriteButton": {
+                "automatizationId": "unfavorite-button"
+              }
+            }
+          }
+        }
+      ],
+      "trackingInfo": {
+        "aux_click": {
+          "actionType": "aux_click",
+          "key": "BrtzgnXyMfNO02Emhk1OX54c2n5xjrhJVpkDjc5BOZZ1"
+        },
+        "click": {
+          "actionType": "click",
+          "key": "BrtzgnXyMfNO02Emhk1OX54c2n5xjrhJVpkDjc5BOZZ1"
+        },
+        "right_click": {
+          "actionType": "right_click",
+          "key": "BrtzgnXyMfNO02Emhk1OX54c2n5xjrhJVpkDjc5BOZZ1"
+        },
+        "view": {
+          "actionType": "view",
+          "key": "BrtzgnXyMfNO02Emhk1OX54c2n5xjrhJVpkDjc5BOZZ1"
+        }
+      }
+    },
+    {
+      "action": {
+        "behavior": "BEHAVIOR_TYPE_REDIRECT",
+        "link": "\u002Fproduct\u002Fdisk-tormoznoy-levyy-pravyy-zadniy-nissan-nissan-juke-zhuk-maxima-qashqai-kashkay-teana-teana-175377369\u002F?asb=sr1BOS5Ne2A1UPZ697qyaaIO3WQJBm9a9r1M6V46UMg%253D&asb2=orCCgSs5kfQX8QSEljp59NePEim1sAZahVqoAQRQE61jEqs9vxOyLz4VeKjQg3aLLmwvQvbMzCeUbcdTxrgIbA&avtc=1&avte=2&avts=1729885413&keywords=pbd2-80",
+        "params": {
+          "target": "_blank"
+        }
+      },
+      "isAdult": false,
+      "mainState": [
+        {
+          "type": "atom",
+          "id": "atom",
+          "atom": {
+            "type": "priceV2",
+            "priceV2": {
+              "price": [
+                {
+                  "text": "2 077 ₽",
+                  "textStyle": "PRICE"
+                },
+                {
+                  "text": "5 967 ₽",
+                  "textStyle": "ORIGINAL_PRICE"
+                }
+              ],
+              "discount": "−65%",
+              "priceStyle": {
+                "styleType": "SALE_PRICE",
+                "gradient": {
+                  "startColor": "#F81155",
+                  "endColor": "#F81155"
+                }
+              },
+              "preset": "SIZE_500",
+              "paddingBottom": "PADDING_200"
+            }
+          }
+        },
+        {
+          "type": "atom",
+          "id": "atom",
+          "atom": {
+            "type": "stockBar",
+            "stockBar": {
+              "theme": "THEME_TYPE_MEDIUM",
+              "text": "Осталось 1 584 шт",
+              "textColor": "ozTextPrimary",
+              "percent": 95,
+              "stockBarColor": "ozRed"
+            }
+          }
+        },
+        {
+          "atom": {
+            "type": "labelList",
+            "labelList": {
+              "items": [
+                {
+                  "title": "\u003cb\u003eMARSHALL\u003c\u002Fb\u003e",
+                  "titleColor": "ozTextPrimary",
+                  "testInfo": {
+                    "automatizationId": "tile-list-paid-brand"
+                  }
+                }
+              ],
+              "textStyle": "tsBodyM",
+              "maxLines": 1,
+              "align": "ALIGN_LEFT",
+              "testInfo": {
+                "automatizationId": "tile-list-labels"
+              }
+            }
+          }
+        },
+        {
+          "type": "atom",
+          "id": "name",
+          "atom": {
+            "type": "textAtom",
+            "textAtom": {
+              "text": "Диск тормозной (левый&amp;#x2F;правый задний) Nissan Ниссан Juke жук Maxima Qashqai Кашкай Teana Теана Tilda DF7369",
+              "textStyle": "tsBodyL",
+              "maxLines": 2,
+              "testInfo": {
+                "automatizationId": "tile-name"
+              }
+            }
+          }
+        },
+        {
+          "atom": {
+            "type": "labelList",
+            "labelList": {
+              "items": [
+                {
+                  "icon": {
+                    "image": "ic_s_star_filled_compact",
+                    "tintColor": "ozRating"
+                  },
+                  "title": "4.9  ",
+                  "titleColor": "textPremium",
+                  "testInfo": {
+                    "automatizationId": "tile-list-rating"
+                  }
+                },
+                {
+                  "icon": {
+                    "image": "ic_s_dialog_filled_compact",
+                    "tintColor": "graphicTertiary"
+                  },
+                  "title": "362 отзыва",
+                  "titleColor": "ozTextSecondary",
+                  "testInfo": {
+                    "automatizationId": "tile-list-comments"
+                  }
+                }
+              ],
+              "textStyle": "tsBodyMBold",
+              "maxLines": 1,
+              "align": "ALIGN_LEFT",
+              "testInfo": {
+                "automatizationId": "tile-list-rating"
+              }
+            }
+          }
+        }
+      ],
+      "multiButton": {
+        "theme": "THEME_TYPE_VERTICAL",
+        "ozonButton": {
+          "type": "addToCartButtonWithQuantity",
+          "addToCartButtonWithQuantity": {
+            "text": "Завтра",
+            "maxItems": 700,
+            "currentItems": 0,
+            "action": {
+              "id": "175377369",
+              "quantity": 1
+            },
+            "trackingInfo": {
+              "click": {
+                "actionType": "to_cart",
+                "key": "nRtrJWZkKfgZ34mmh85xm1OSJA4j9VFWJqJ7VIRB3l2v"
+              }
+            },
+            "testInfo": {
+              "automatizationId": "ozonAddToCart"
+            },
+            "theme": "STYLE_TYPE_PRIMARY",
+            "mode": "UPDATE_MODE_STEP",
+            "buttonIconId": "ic_m_grocery_cart_filled",
+            "sellerIcon": {
+              "sellerIconId": "ic_m_premium_circle_filled",
+              "sellerIconBgColor": "#ffffff",
+              "tintColor": "#ffb800"
+            },
+            "qtyTextDisabled": true,
+            "buttonSizeMode": "SIZE_MODE_FILL"
+          }
+        }
+      },
+      "skuId": "175377369",
+      "tileDefer": 0,
+      "tileImage": {
+        "imageRatio": "1:1",
+        "pinchToZoomTrackingInfo": {
+          "click": {
+            "actionType": "imagePinch",
+            "key": "nRtrJWZkKfgZ34mmh85xm1OSJA4j9VFWJqJ7VIRB3l2v"
+          },
+          "view": {
+            "actionType": "onboardingView",
+            "key": "nRtrJWZkKfgZ34mmh85xm1OSJA4j9VFWJqJ7VIRB3l2v"
+          }
+        },
+        "items": [
+          {
+            "type": "image",
+            "image": {
+              "link": "https:\u002F\u002Fcdn1.ozone.ru\u002Fs3\u002Fmultimedia-1-h\u002F7072898093.jpg",
+              "contentMode": "SCALE_ASPECT_FIT"
+            }
+          },
+          {
+            "type": "image",
+            "image": {
+              "link": "https:\u002F\u002Fcdn1.ozone.ru\u002Fs3\u002Fmultimedia-1-f\u002F7159446231.jpg",
+              "contentMode": "SCALE_ASPECT_FIT"
+            }
+          },
+          {
+            "type": "image",
+            "image": {
+              "link": "https:\u002F\u002Fcdn1.ozone.ru\u002Fs3\u002Fmultimedia-1-c\u002F7159446336.jpg",
+              "contentMode": "SCALE_ASPECT_FIT"
+            }
+          },
+          {
+            "type": "image",
+            "image": {
+              "link": "https:\u002F\u002Fcdn1.ozone.ru\u002Fs3\u002Fmultimedia-1-z\u002F7159446251.jpg",
+              "contentMode": "SCALE_ASPECT_FIT"
+            }
+          },
+          {
+            "type": "image",
+            "image": {
+              "link": "https:\u002F\u002Fcdn1.ozone.ru\u002Fs3\u002Fmultimedia-1-5\u002F7159446185.jpg",
+              "contentMode": "SCALE_ASPECT_FIT"
+            }
+          },
+          {
+            "type": "image",
+            "image": {
+              "link": "https:\u002F\u002Fcdn1.ozone.ru\u002Fs3\u002Fmultimedia-1-c\u002F7159446192.jpg",
+              "contentMode": "SCALE_ASPECT_FIT"
+            }
+          }
+        ],
+        "leftBottomBadge": {
+          "text": "Постоплата",
+          "image": "ic_m_money_to_card_filled",
+          "tintColor": "textLightKey",
+          "iconTintColor": "graphicLightKey",
+          "backgroundColor": "bgOzonPrimary",
+          "testInfo": {
+            "automatizationId": "badge-postPayment"
+          },
+          "theme": "STYLE_TYPE_MEDIUM",
+          "iconPosition": "ICON_POSITION_LEFT"
+        },
+        "secondLeftBottomBadge": {
+          "text": "Распродажа",
+          "image": "ic_s_hot_filled_compact",
+          "tintColor": "#ffffff",
+          "iconTintColor": "#ffffff",
+          "backgroundColor": "#F81155",
+          "testInfo": {
+            "automatizationId": "badge-marketingSuperHigh"
+          },
+          "theme": "STYLE_TYPE_MEDIUM",
+          "iconPosition": "ICON_POSITION_LEFT"
+        }
+      },
+      "topRightButtons": [
+        {
+          "type": "favoriteProductMoleculeV2",
+          "favoriteProductMoleculeV2": {
+            "id": "175377369",
+            "isFav": false,
+            "favListsLink": "ozon:\u002F\u002Fmodal\u002FfavoritesListsSelect?sku=175377369",
+            "trackingInfo": {
+              "click": {
+                "actionType": "favorite",
+                "key": "nRtrJWZkKfgZ34mmh85xm1OSJA4j9VFWJqJ7VIRB3l2v"
+              }
+            },
+            "testInfo": {
+              "favoriteButton": {
+                "automatizationId": "favorite-button"
+              },
+              "unFavoriteButton": {
+                "automatizationId": "unfavorite-button"
+              }
+            }
+          }
+        }
+      ],
+      "trackingInfo": {
+        "aux_click": {
+          "actionType": "aux_click",
+          "key": "nRtrJWZkKfgZ34mmh85xm1OSJA4j9VFWJqJ7VIRB3l2v"
+        },
+        "click": {
+          "actionType": "click",
+          "key": "nRtrJWZkKfgZ34mmh85xm1OSJA4j9VFWJqJ7VIRB3l2v"
+        },
+        "right_click": {
+          "actionType": "right_click",
+          "key": "nRtrJWZkKfgZ34mmh85xm1OSJA4j9VFWJqJ7VIRB3l2v"
+        },
+        "view": {
+          "actionType": "view",
+          "key": "nRtrJWZkKfgZ34mmh85xm1OSJA4j9VFWJqJ7VIRB3l2v"
+        }
+      }
+    },
+    {
+      "action": {
+        "behavior": "BEHAVIOR_TYPE_REDIRECT",
+        "link": "\u002Fproduct\u002Fgnezdo-dlya-plat-2-00-mm-ruichi-pbd2-80-pbd2-2x40-2-00-mm-80-kontaktov-1593365641\u002F?asb=jGdkUPqbx%252BTTW%252BwZTfnKPZCk4%252BeCuTtN7oGRtZOKDZ4%253D&asb2=FV8bKDOySb6FRkuqLXDMK_VU-4DTmkYuJLAfEArAA_m1lX9aNebrNSYrxuHQOX58xLYY1qdLYDyQtvWpB3bHrA&avtc=1&avte=2&avts=1729885413&keywords=pbd2-80",
+        "params": {
+          "target": "_blank"
+        }
+      },
+      "isAdult": false,
+      "mainState": [
+        {
+          "type": "atom",
+          "id": "atom",
+          "atom": {
+            "type": "priceV2",
+            "priceV2": {
+              "price": [
+                {
+                  "text": "567 ₽",
+                  "textStyle": "PRICE"
+                },
+                {
+                  "text": "698 ₽",
+                  "textStyle": "ORIGINAL_PRICE"
+                }
+              ],
+              "discount": "−19%",
+              "priceStyle": {
+                "styleType": "CARD_PRICE"
+              },
+              "preset": "SIZE_500",
+              "paddingBottom": "PADDING_200"
+            }
+          }
+        },
+        {
+          "atom": {
+            "type": "labelList",
+            "labelList": {
+              "items": [
+                {
+                  "title": "\u003cb\u003eRUICHI\u003c\u002Fb\u003e",
+                  "titleColor": "ozTextPrimary",
+                  "testInfo": {
+                    "automatizationId": "tile-list-paid-brand"
+                  }
+                }
+              ],
+              "textStyle": "tsBodyM",
+              "maxLines": 1,
+              "align": "ALIGN_LEFT",
+              "testInfo": {
+                "automatizationId": "tile-list-labels"
+              }
+            }
+          }
+        },
+        {
+          "type": "atom",
+          "id": "name",
+          "atom": {
+            "type": "textAtom",
+            "textAtom": {
+              "text": "Гнездо для плат 2.00 мм RUICHI PBD2-80 (PBD2-2x40) 2.00 мм 80 контактов",
+              "textStyle": "tsBodyL",
+              "maxLines": 2,
+              "testInfo": {
+                "automatizationId": "tile-name"
+              }
+            }
+          }
+        }
+      ],
+      "multiButton": {
+        "theme": "THEME_TYPE_VERTICAL",
+        "ozonButton": {
+          "type": "addToCartButtonWithQuantity",
+          "addToCartButtonWithQuantity": {
+            "text": "7 ноября",
+            "maxItems": 700,
+            "currentItems": 0,
+            "action": {
+              "id": "1593365641",
+              "quantity": 1
+            },
+            "trackingInfo": {
+              "click": {
+                "actionType": "to_cart",
+                "key": "J8tg7nWV1umQLZLptVNDnqkiWMB1vri7kxRkMf3VM3ZJ"
+              }
+            },
+            "testInfo": {
+              "automatizationId": "ozonAddToCart"
+            },
+            "theme": "STYLE_TYPE_PRIMARY",
+            "mode": "UPDATE_MODE_STEP",
+            "buttonIconId": "ic_m_grocery_cart_filled",
+            "qtyTextDisabled": true,
+            "buttonSizeMode": "SIZE_MODE_FILL"
+          }
+        }
+      },
+      "skuId": "1593365641",
+      "tileDefer": 0,
+      "tileImage": {
+        "imageRatio": "1:1",
+        "pinchToZoomTrackingInfo": {
+          "click": {
+            "actionType": "imagePinch",
+            "key": "J8tg7nWV1umQLZLptVNDnqkiWMB1vri7kxRkMf3VM3ZJ"
+          },
+          "view": {
+            "actionType": "onboardingView",
+            "key": "J8tg7nWV1umQLZLptVNDnqkiWMB1vri7kxRkMf3VM3ZJ"
+          }
+        },
+        "items": [
+          {
+            "type": "image",
+            "image": {
+              "link": "https:\u002F\u002Fcdn1.ozone.ru\u002Fs3\u002Fmultimedia-1-0\u002F7043876064.jpg",
+              "contentMode": "SCALE_ASPECT_FIT"
+            }
+          }
+        ],
+        "leftBottomBadge": {
+          "text": "Постоплата",
+          "image": "ic_m_money_to_card_filled",
+          "tintColor": "textLightKey",
+          "iconTintColor": "graphicLightKey",
+          "backgroundColor": "bgOzonPrimary",
+          "testInfo": {
+            "automatizationId": "badge-postPayment"
+          },
+          "theme": "STYLE_TYPE_MEDIUM",
+          "iconPosition": "ICON_POSITION_LEFT"
+        }
+      },
+      "topRightButtons": [
+        {
+          "type": "favoriteProductMoleculeV2",
+          "favoriteProductMoleculeV2": {
+            "id": "1593365641",
+            "isFav": false,
+            "favListsLink": "ozon:\u002F\u002Fmodal\u002FfavoritesListsSelect?sku=1593365641",
+            "trackingInfo": {
+              "click": {
+                "actionType": "favorite",
+                "key": "J8tg7nWV1umQLZLptVNDnqkiWMB1vri7kxRkMf3VM3ZJ"
+              }
+            },
+            "testInfo": {
+              "favoriteButton": {
+                "automatizationId": "favorite-button"
+              },
+              "unFavoriteButton": {
+                "automatizationId": "unfavorite-button"
+              }
+            }
+          }
+        }
+      ],
+      "trackingInfo": {
+        "aux_click": {
+          "actionType": "aux_click",
+          "key": "J8tg7nWV1umQLZLptVNDnqkiWMB1vri7kxRkMf3VM3ZJ"
+        },
+        "click": {
+          "actionType": "click",
+          "key": "J8tg7nWV1umQLZLptVNDnqkiWMB1vri7kxRkMf3VM3ZJ"
+        },
+        "right_click": {
+          "actionType": "right_click",
+          "key": "J8tg7nWV1umQLZLptVNDnqkiWMB1vri7kxRkMf3VM3ZJ"
+        },
+        "view": {
+          "actionType": "view",
+          "key": "J8tg7nWV1umQLZLptVNDnqkiWMB1vri7kxRkMf3VM3ZJ"
+        }
+      }
+    },
+    {
+      "action": {
+        "behavior": "BEHAVIOR_TYPE_REDIRECT",
+        "link": "\u002Fproduct\u002Fgnezdo-na-platu-pbd-80-ds-1023-2x40-pryamoe-chernoe-615134757\u002F?asb=mTJbLN8DeJSf0VQjlNbs6OPaTIQyIvG7pLIVJ%252FBYeSo%253D&asb2=tqiPXF-6zRSkTYDcnAe5Z7MvBQLne0FKSgAC_TIh97X6vZsxoecijCBHHdOqgOGTn4PfDR03KRx3xw7oav8wAw&avtc=1&avte=2&avts=1729885413&keywords=pbd2-80",
+        "params": {
+          "target": "_blank"
+        }
+      },
+      "isAdult": false,
+      "mainState": [
+        {
+          "type": "atom",
+          "id": "atom",
+          "atom": {
+            "type": "priceV2",
+            "priceV2": {
+              "price": [
+                {
+                  "text": "196 ₽",
+                  "textStyle": "PRICE"
+                },
+                {
+                  "text": "419 ₽",
+                  "textStyle": "ORIGINAL_PRICE"
+                }
+              ],
+              "discount": "−53%",
+              "priceStyle": {
+                "styleType": "CARD_PRICE"
+              },
+              "preset": "SIZE_500",
+              "paddingBottom": "PADDING_200"
+            }
+          }
+        },
+        {
+          "type": "atom",
+          "id": "name",
+          "atom": {
+            "type": "textAtom",
+            "textAtom": {
+              "text": "Гнездо на плату PBD-80 (DS-1023 - 2x40), прямое черное",
+              "textStyle": "tsBodyL",
+              "maxLines": 2,
+              "testInfo": {
+                "automatizationId": "tile-name"
+              }
+            }
+          }
+        },
+        {
+          "atom": {
+            "type": "labelList",
+            "labelList": {
+              "items": [
+                {
+                  "icon": {
+                    "image": "ic_s_star_filled_compact",
+                    "tintColor": "ozRating"
+                  },
+                  "title": "5.0  ",
+                  "titleColor": "textPremium",
+                  "testInfo": {
+                    "automatizationId": "tile-list-rating"
+                  }
+                },
+                {
+                  "icon": {
+                    "image": "ic_s_dialog_filled_compact",
+                    "tintColor": "graphicTertiary"
+                  },
+                  "title": "6 отзывов",
+                  "titleColor": "ozTextSecondary",
+                  "testInfo": {
+                    "automatizationId": "tile-list-comments"
+                  }
+                }
+              ],
+              "textStyle": "tsBodyMBold",
+              "maxLines": 1,
+              "align": "ALIGN_LEFT",
+              "testInfo": {
+                "automatizationId": "tile-list-rating"
+              }
+            }
+          }
+        }
+      ],
+      "multiButton": {
+        "theme": "THEME_TYPE_VERTICAL",
+        "ozonButton": {
+          "type": "addToCartButtonWithQuantity",
+          "addToCartButtonWithQuantity": {
+            "text": "3 ноября",
+            "maxItems": 172,
+            "currentItems": 0,
+            "action": {
+              "id": "615134757",
+              "quantity": 1
+            },
+            "trackingInfo": {
+              "click": {
+                "actionType": "to_cart",
+                "key": "MZtvQJy7Rh2Mr8j3uzlDBVYiYR8ml2Fzjok6ZiVj2wK4"
+              }
+            },
+            "testInfo": {
+              "automatizationId": "ozonAddToCart"
+            },
+            "theme": "STYLE_TYPE_PRIMARY",
+            "mode": "UPDATE_MODE_STEP",
+            "buttonIconId": "ic_m_grocery_cart_filled",
+            "sellerIcon": {
+              "sellerIconId": "ic_m_premium_circle_filled",
+              "sellerIconBgColor": "#ffffff",
+              "tintColor": "#ffb800"
+            },
+            "qtyTextDisabled": true,
+            "buttonSizeMode": "SIZE_MODE_FILL"
+          }
+        }
+      },
+      "skuId": "615134757",
+      "tileDefer": 2,
+      "tileImage": {
+        "imageRatio": "1:1",
+        "pinchToZoomTrackingInfo": {
+          "click": {
+            "actionType": "imagePinch",
+            "key": "MZtvQJy7Rh2Mr8j3uzlDBVYiYR8ml2Fzjok6ZiVj2wK4"
+          },
+          "view": {
+            "actionType": "onboardingView",
+            "key": "MZtvQJy7Rh2Mr8j3uzlDBVYiYR8ml2Fzjok6ZiVj2wK4"
+          }
+        },
+        "items": [
+          {
+            "type": "image",
+            "image": {
+              "link": "https:\u002F\u002Fcdn1.ozone.ru\u002Fs3\u002Fmultimedia-u\u002F6348568014.jpg",
+              "contentMode": "SCALE_ASPECT_FIT"
+            }
+          }
+        ],
+        "leftBottomBadge": {
+          "text": "Постоплата",
+          "image": "ic_m_money_to_card_filled",
+          "tintColor": "textLightKey",
+          "iconTintColor": "graphicLightKey",
+          "backgroundColor": "bgOzonPrimary",
+          "testInfo": {
+            "automatizationId": "badge-postPayment"
+          },
+          "theme": "STYLE_TYPE_MEDIUM",
+          "iconPosition": "ICON_POSITION_LEFT"
+        },
+        "secondLeftBottomBadge": {
+          "text": "Цена что надо",
+          "image": "ic_s_like_filled_compact",
+          "tintColor": "textLightKey",
+          "iconTintColor": "graphicLightKey",
+          "backgroundColor": "bgPositivePrimary",
+          "testInfo": {
+            "automatizationId": "badge-priceIndex"
+          },
+          "theme": "STYLE_TYPE_MEDIUM",
+          "iconPosition": "ICON_POSITION_LEFT"
+        }
+      },
+      "topRightButtons": [
+        {
+          "type": "favoriteProductMoleculeV2",
+          "favoriteProductMoleculeV2": {
+            "id": "615134757",
+            "isFav": false,
+            "favListsLink": "ozon:\u002F\u002Fmodal\u002FfavoritesListsSelect?sku=615134757",
+            "trackingInfo": {
+              "click": {
+                "actionType": "favorite",
+                "key": "MZtvQJy7Rh2Mr8j3uzlDBVYiYR8ml2Fzjok6ZiVj2wK4"
+              }
+            },
+            "testInfo": {
+              "favoriteButton": {
+                "automatizationId": "favorite-button"
+              },
+              "unFavoriteButton": {
+                "automatizationId": "unfavorite-button"
+              }
+            }
+          }
+        }
+      ],
+      "trackingInfo": {
+        "aux_click": {
+          "actionType": "aux_click",
+          "key": "MZtvQJy7Rh2Mr8j3uzlDBVYiYR8ml2Fzjok6ZiVj2wK4"
+        },
+        "click": {
+          "actionType": "click",
+          "key": "MZtvQJy7Rh2Mr8j3uzlDBVYiYR8ml2Fzjok6ZiVj2wK4"
+        },
+        "right_click": {
+          "actionType": "right_click",
+          "key": "MZtvQJy7Rh2Mr8j3uzlDBVYiYR8ml2Fzjok6ZiVj2wK4"
+        },
+        "view": {
+          "actionType": "view",
+          "key": "MZtvQJy7Rh2Mr8j3uzlDBVYiYR8ml2Fzjok6ZiVj2wK4"
+        }
+      }
+    },
+    {
+      "action": {
+        "behavior": "BEHAVIOR_TYPE_REDIRECT",
+        "link": "\u002Fproduct\u002Fabordage-podtyazhki-1588888557\u002F?asb=rtpA1mQQytnmMIFtQfA9PRIy1yjj%252FNxHIT9i8nUrqmk%253D&asb2=078ScAU23Ha_rt101r8bJ_NwPoYqNNhv3WeyrJyPp5xGqGeI6-1ocse3-ibgm-gRrX6bc0yyia6WtHKQBR05oQ&avtc=1&avte=2&avts=1729885413&keywords=pbd2-80",
+        "params": {
+          "target": "_blank"
+        }
+      },
+      "isAdult": false,
+      "mainState": [
+        {
+          "type": "atom",
+          "id": "atom",
+          "atom": {
+            "type": "priceV2",
+            "priceV2": {
+              "price": [
+                {
+                  "text": "401 ₽",
+                  "textStyle": "PRICE"
+                },
+                {
+                  "text": "923 ₽",
+                  "textStyle": "ORIGINAL_PRICE"
+                }
+              ],
+              "discount": "−57%",
+              "priceStyle": {
+                "styleType": "CARD_PRICE"
+              },
+              "preset": "SIZE_500",
+              "paddingBottom": "PADDING_200"
+            }
+          }
+        },
+        {
+          "type": "atom",
+          "id": "name",
+          "atom": {
+            "type": "textAtom",
+            "textAtom": {
+              "text": "ABORDAGE Подтяжки",
+              "textStyle": "tsBodyL",
+              "maxLines": 2,
+              "testInfo": {
+                "automatizationId": "tile-name"
+              }
+            }
+          }
+        },
+        {
+          "atom": {
+            "type": "labelList",
+            "labelList": {
+              "items": [
+                {
+                  "icon": {
+                    "image": "ic_s_star_filled_compact",
+                    "tintColor": "ozRating"
+                  },
+                  "title": "4.8  ",
+                  "titleColor": "textPremium",
+                  "testInfo": {
+                    "automatizationId": "tile-list-rating"
+                  }
+                },
+                {
+                  "icon": {
+                    "image": "ic_s_dialog_filled_compact",
+                    "tintColor": "graphicTertiary"
+                  },
+                  "title": "319 отзывов",
+                  "titleColor": "ozTextSecondary",
+                  "testInfo": {
+                    "automatizationId": "tile-list-comments"
+                  }
+                }
+              ],
+              "textStyle": "tsBodyMBold",
+              "maxLines": 1,
+              "align": "ALIGN_LEFT",
+              "testInfo": {
+                "automatizationId": "tile-list-rating"
+              }
+            }
+          }
+        }
+      ],
+      "multiButton": {
+        "theme": "THEME_TYPE_VERTICAL",
+        "ozonButton": {
+          "type": "addToCartButtonWithQuantity",
+          "addToCartButtonWithQuantity": {
+            "text": "29 октября",
+            "maxItems": 258,
+            "currentItems": 0,
+            "action": {
+              "id": "1588888557",
+              "quantity": 1
+            },
+            "trackingInfo": {
+              "click": {
+                "actionType": "to_cart",
+                "key": "36tW54gOGFR1ZRRnIZ1r5DlF5W4KEJHGWW7xXf5A2Xpx"
+              }
+            },
+            "testInfo": {
+              "automatizationId": "ozonAddToCart"
+            },
+            "theme": "STYLE_TYPE_PRIMARY",
+            "mode": "UPDATE_MODE_STEP",
+            "buttonIconId": "ic_m_grocery_cart_filled",
+            "sellerIcon": {
+              "sellerIconId": "ic_m_premium_circle_filled",
+              "sellerIconBgColor": "#ffffff",
+              "tintColor": "#ffb800"
+            },
+            "qtyTextDisabled": true,
+            "buttonSizeMode": "SIZE_MODE_FILL"
+          }
+        }
+      },
+      "skuId": "1588888557",
+      "tileDefer": 2,
+      "tileImage": {
+        "imageRatio": "1:1",
+        "pinchToZoomTrackingInfo": {
+          "click": {
+            "actionType": "imagePinch",
+            "key": "36tW54gOGFR1ZRRnIZ1r5DlF5W4KEJHGWW7xXf5A2Xpx"
+          },
+          "view": {
+            "actionType": "onboardingView",
+            "key": "36tW54gOGFR1ZRRnIZ1r5DlF5W4KEJHGWW7xXf5A2Xpx"
+          }
+        },
+        "items": [
+          {
+            "type": "image",
+            "image": {
+              "link": "https:\u002F\u002Fcdn1.ozone.ru\u002Fs3\u002Fmultimedia-1-j\u002F7045385275.jpg",
+              "contentMode": "SCALE_ASPECT_FIT"
+            }
+          },
+          {
+            "type": "image",
+            "image": {
+              "link": "https:\u002F\u002Fcdn1.ozone.ru\u002Fs3\u002Fmultimedia-1-f\u002F7045385235.jpg",
+              "contentMode": "SCALE_ASPECT_FIT"
+            }
+          },
+          {
+            "type": "image",
+            "image": {
+              "link": "https:\u002F\u002Fcdn1.ozone.ru\u002Fs3\u002Fmultimedia-1-6\u002F7045385262.jpg",
+              "contentMode": "SCALE_ASPECT_FIT"
+            }
+          },
+          {
+            "type": "image",
+            "image": {
+              "link": "https:\u002F\u002Fcdn1.ozone.ru\u002Fs3\u002Fmultimedia-1-o\u002F7045385280.jpg",
+              "contentMode": "SCALE_ASPECT_FIT"
+            }
+          },
+          {
+            "type": "image",
+            "image": {
+              "link": "https:\u002F\u002Fcdn1.ozone.ru\u002Fs3\u002Fmultimedia-1-0\u002F7045385184.jpg",
+              "contentMode": "SCALE_ASPECT_FIT"
+            }
+          },
+          {
+            "type": "image",
+            "image": {
+              "link": "https:\u002F\u002Fcdn1.ozone.ru\u002Fs3\u002Fmultimedia-1-x\u002F7045385217.jpg",
+              "contentMode": "SCALE_ASPECT_FIT"
+            }
+          }
+        ],
+        "leftBottomBadge": {
+          "text": "Постоплата",
+          "image": "ic_m_money_to_card_filled",
+          "tintColor": "textLightKey",
+          "iconTintColor": "graphicLightKey",
+          "backgroundColor": "bgOzonPrimary",
+          "testInfo": {
+            "automatizationId": "badge-postPayment"
+          },
+          "theme": "STYLE_TYPE_MEDIUM",
+          "iconPosition": "ICON_POSITION_LEFT"
+        }
+      },
+      "topRightButtons": [
+        {
+          "type": "favoriteProductMoleculeV2",
+          "favoriteProductMoleculeV2": {
+            "id": "1588888557",
+            "isFav": false,
+            "favListsLink": "ozon:\u002F\u002Fmodal\u002FfavoritesListsSelect?sku=1588888557",
+            "trackingInfo": {
+              "click": {
+                "actionType": "favorite",
+                "key": "36tW54gOGFR1ZRRnIZ1r5DlF5W4KEJHGWW7xXf5A2Xpx"
+              }
+            },
+            "testInfo": {
+              "favoriteButton": {
+                "automatizationId": "favorite-button"
+              },
+              "unFavoriteButton": {
+                "automatizationId": "unfavorite-button"
+              }
+            }
+          }
+        }
+      ],
+      "trackingInfo": {
+        "aux_click": {
+          "actionType": "aux_click",
+          "key": "36tW54gOGFR1ZRRnIZ1r5DlF5W4KEJHGWW7xXf5A2Xpx"
+        },
+        "click": {
+          "actionType": "click",
+          "key": "36tW54gOGFR1ZRRnIZ1r5DlF5W4KEJHGWW7xXf5A2Xpx"
+        },
+        "right_click": {
+          "actionType": "right_click",
+          "key": "36tW54gOGFR1ZRRnIZ1r5DlF5W4KEJHGWW7xXf5A2Xpx"
+        },
+        "view": {
+          "actionType": "view",
+          "key": "36tW54gOGFR1ZRRnIZ1r5DlF5W4KEJHGWW7xXf5A2Xpx"
+        }
+      }
+    },
+    {
+      "action": {
+        "behavior": "BEHAVIOR_TYPE_REDIRECT",
+        "link": "\u002Fproduct\u002Fabordage-podtyazhki-1595112158\u002F?asb=nA7KSX2wNtjZi3enD2J3tzpB5E9r4lM7noL%252Fq5TiljM%253D&asb2=iLPk0Ju3NP9Ek3Uozxk2esXA9s9bbI32n__OwhQzu7AivyhMwYp1p5SjR-0a8pbdOIKxrsSUaP-WApTWktD9Vw&avtc=1&avte=2&avts=1729885413&keywords=pbd2-80",
+        "params": {
+          "target": "_blank"
+        }
+      },
+      "isAdult": false,
+      "mainState": [
+        {
+          "type": "atom",
+          "id": "atom",
+          "atom": {
+            "type": "priceV2",
+            "priceV2": {
+              "price": [
+                {
+                  "text": "379 ₽",
+                  "textStyle": "PRICE"
+                },
+                {
+                  "text": "750 ₽",
+                  "textStyle": "ORIGINAL_PRICE"
+                }
+              ],
+              "discount": "−49%",
+              "priceStyle": {
+                "styleType": "CARD_PRICE"
+              },
+              "preset": "SIZE_500",
+              "paddingBottom": "PADDING_200"
+            }
+          }
+        },
+        {
+          "type": "atom",
+          "id": "name",
+          "atom": {
+            "type": "textAtom",
+            "textAtom": {
+              "text": "ABORDAGE Подтяжки",
+              "textStyle": "tsBodyL",
+              "maxLines": 2,
+              "testInfo": {
+                "automatizationId": "tile-name"
+              }
+            }
+          }
+        },
+        {
+          "atom": {
+            "type": "labelList",
+            "labelList": {
+              "items": [
+                {
+                  "icon": {
+                    "image": "ic_s_star_filled_compact",
+                    "tintColor": "ozRating"
+                  },
+                  "title": "4.9  ",
+                  "titleColor": "textPremium",
+                  "testInfo": {
+                    "automatizationId": "tile-list-rating"
+                  }
+                },
+                {
+                  "icon": {
+                    "image": "ic_s_dialog_filled_compact",
+                    "tintColor": "graphicTertiary"
+                  },
+                  "title": "1 788 отзывов",
+                  "titleColor": "ozTextSecondary",
+                  "testInfo": {
+                    "automatizationId": "tile-list-comments"
+                  }
+                }
+              ],
+              "textStyle": "tsBodyMBold",
+              "maxLines": 1,
+              "align": "ALIGN_LEFT",
+              "testInfo": {
+                "automatizationId": "tile-list-rating"
+              }
+            }
+          }
+        }
+      ],
+      "multiButton": {
+        "theme": "THEME_TYPE_VERTICAL",
+        "ozonButton": {
+          "type": "addToCartButtonWithQuantity",
+          "addToCartButtonWithQuantity": {
+            "text": "Завтра",
+            "maxItems": 125,
+            "currentItems": 0,
+            "action": {
+              "id": "1595112158",
+              "quantity": 1
+            },
+            "trackingInfo": {
+              "click": {
+                "actionType": "to_cart",
+                "key": "PjtJ761Pockq1DNgilKPJP9cr3q14MSGgQGjwCl1jE8j"
+              }
+            },
+            "testInfo": {
+              "automatizationId": "ozonAddToCart"
+            },
+            "theme": "STYLE_TYPE_PRIMARY",
+            "mode": "UPDATE_MODE_STEP",
+            "buttonIconId": "ic_m_grocery_cart_filled",
+            "sellerIcon": {
+              "sellerIconId": "ic_m_premium_circle_filled",
+              "sellerIconBgColor": "#ffffff",
+              "tintColor": "#ffb800"
+            },
+            "qtyTextDisabled": true,
+            "buttonSizeMode": "SIZE_MODE_FILL"
+          }
+        }
+      },
+      "skuId": "1595112158",
+      "tileDefer": 4,
+      "tileImage": {
+        "imageRatio": "1:1",
+        "pinchToZoomTrackingInfo": {
+          "click": {
+            "actionType": "imagePinch",
+            "key": "PjtJ761Pockq1DNgilKPJP9cr3q14MSGgQGjwCl1jE8j"
+          },
+          "view": {
+            "actionType": "onboardingView",
+            "key": "PjtJ761Pockq1DNgilKPJP9cr3q14MSGgQGjwCl1jE8j"
+          }
+        },
+        "items": [
+          {
+            "type": "image",
+            "image": {
+              "link": "https:\u002F\u002Fcdn1.ozone.ru\u002Fs3\u002Fmultimedia-1-2\u002F7050018062.jpg",
+              "contentMode": "SCALE_ASPECT_FIT"
+            }
+          },
+          {
+            "type": "image",
+            "image": {
+              "link": "https:\u002F\u002Fcdn1.ozone.ru\u002Fs3\u002Fmultimedia-1-s\u002F7056052984.jpg",
+              "contentMode": "SCALE_ASPECT_FIT"
+            }
+          },
+          {
+            "type": "image",
+            "image": {
+              "link": "https:\u002F\u002Fcdn1.ozone.ru\u002Fs3\u002Fmultimedia-1-d\u002F7056052609.jpg",
+              "contentMode": "SCALE_ASPECT_FIT"
+            }
+          },
+          {
+            "type": "image",
+            "image": {
+              "link": "https:\u002F\u002Fcdn1.ozone.ru\u002Fs3\u002Fmultimedia-1-8\u002F7056052640.jpg",
+              "contentMode": "SCALE_ASPECT_FIT"
+            }
+          },
+          {
+            "type": "image",
+            "image": {
+              "link": "https:\u002F\u002Fcdn1.ozone.ru\u002Fs3\u002Fmultimedia-1-4\u002F7056052564.jpg",
+              "contentMode": "SCALE_ASPECT_FIT"
+            }
+          },
+          {
+            "type": "image",
+            "image": {
+              "link": "https:\u002F\u002Fcdn1.ozone.ru\u002Fs3\u002Fmultimedia-1-s\u002F7056052588.jpg",
+              "contentMode": "SCALE_ASPECT_FIT"
+            }
+          }
+        ],
+        "leftBottomBadge": {
+          "text": "Постоплата",
+          "image": "ic_m_money_to_card_filled",
+          "tintColor": "textLightKey",
+          "iconTintColor": "graphicLightKey",
+          "backgroundColor": "bgOzonPrimary",
+          "testInfo": {
+            "automatizationId": "badge-postPayment"
+          },
+          "theme": "STYLE_TYPE_MEDIUM",
+          "iconPosition": "ICON_POSITION_LEFT"
+        }
+      },
+      "topRightButtons": [
+        {
+          "type": "favoriteProductMoleculeV2",
+          "favoriteProductMoleculeV2": {
+            "id": "1595112158",
+            "isFav": false,
+            "favListsLink": "ozon:\u002F\u002Fmodal\u002FfavoritesListsSelect?sku=1595112158",
+            "trackingInfo": {
+              "click": {
+                "actionType": "favorite",
+                "key": "PjtJ761Pockq1DNgilKPJP9cr3q14MSGgQGjwCl1jE8j"
+              }
+            },
+            "testInfo": {
+              "favoriteButton": {
+                "automatizationId": "favorite-button"
+              },
+              "unFavoriteButton": {
+                "automatizationId": "unfavorite-button"
+              }
+            }
+          }
+        }
+      ],
+      "trackingInfo": {
+        "aux_click": {
+          "actionType": "aux_click",
+          "key": "PjtJ761Pockq1DNgilKPJP9cr3q14MSGgQGjwCl1jE8j"
+        },
+        "click": {
+          "actionType": "click",
+          "key": "PjtJ761Pockq1DNgilKPJP9cr3q14MSGgQGjwCl1jE8j"
+        },
+        "right_click": {
+          "actionType": "right_click",
+          "key": "PjtJ761Pockq1DNgilKPJP9cr3q14MSGgQGjwCl1jE8j"
+        },
+        "view": {
+          "actionType": "view",
+          "key": "PjtJ761Pockq1DNgilKPJP9cr3q14MSGgQGjwCl1jE8j"
+        }
+      }
+    },
+    {
+      "action": {
+        "behavior": "BEHAVIOR_TYPE_REDIRECT",
+        "link": "\u002Fproduct\u002Fabordage-podtyazhki-1595107086\u002F?asb=yV4ZrGWXhEqmpjru43Thinz3a6MbHHvCQHGjXLk4t%252B0%253D&asb2=ulHyJ4chkGo96webNydre0RT-RCLR0CgLuDW_CxqlIwOLQtRm3weG-uVsosKi3vrm2-adoiXp5mxoPAWMRiCcg&avtc=1&avte=2&avts=1729885413&keywords=pbd2-80",
+        "params": {
+          "target": "_blank"
+        }
+      },
+      "isAdult": false,
+      "mainState": [
+        {
+          "type": "atom",
+          "id": "atom",
+          "atom": {
+            "type": "priceV2",
+            "priceV2": {
+              "price": [
+                {
+                  "text": "379 ₽",
+                  "textStyle": "PRICE"
+                },
+                {
+                  "text": "750 ₽",
+                  "textStyle": "ORIGINAL_PRICE"
+                }
+              ],
+              "discount": "−49%",
+              "priceStyle": {
+                "styleType": "CARD_PRICE"
+              },
+              "preset": "SIZE_500",
+              "paddingBottom": "PADDING_200"
+            }
+          }
+        },
+        {
+          "type": "atom",
+          "id": "name",
+          "atom": {
+            "type": "textAtom",
+            "textAtom": {
+              "text": "ABORDAGE Подтяжки",
+              "textStyle": "tsBodyL",
+              "maxLines": 2,
+              "testInfo": {
+                "automatizationId": "tile-name"
+              }
+            }
+          }
+        },
+        {
+          "atom": {
+            "type": "labelList",
+            "labelList": {
+              "items": [
+                {
+                  "icon": {
+                    "image": "ic_s_star_filled_compact",
+                    "tintColor": "ozRating"
+                  },
+                  "title": "4.9  ",
+                  "titleColor": "textPremium",
+                  "testInfo": {
+                    "automatizationId": "tile-list-rating"
+                  }
+                },
+                {
+                  "icon": {
+                    "image": "ic_s_dialog_filled_compact",
+                    "tintColor": "graphicTertiary"
+                  },
+                  "title": "1 788 отзывов",
+                  "titleColor": "ozTextSecondary",
+                  "testInfo": {
+                    "automatizationId": "tile-list-comments"
+                  }
+                }
+              ],
+              "textStyle": "tsBodyMBold",
+              "maxLines": 1,
+              "align": "ALIGN_LEFT",
+              "testInfo": {
+                "automatizationId": "tile-list-rating"
+              }
+            }
+          }
+        }
+      ],
+      "multiButton": {
+        "theme": "THEME_TYPE_VERTICAL",
+        "ozonButton": {
+          "type": "addToCartButtonWithQuantity",
+          "addToCartButtonWithQuantity": {
+            "text": "Завтра",
+            "maxItems": 129,
+            "currentItems": 0,
+            "action": {
+              "id": "1595107086",
+              "quantity": 1
+            },
+            "trackingInfo": {
+              "click": {
+                "actionType": "to_cart",
+                "key": "QktJ5R1Y3c70P6kphJYBlVOI4MqkoqCPnMw3zFWvL1L4"
+              }
+            },
+            "testInfo": {
+              "automatizationId": "ozonAddToCart"
+            },
+            "theme": "STYLE_TYPE_PRIMARY",
+            "mode": "UPDATE_MODE_STEP",
+            "buttonIconId": "ic_m_grocery_cart_filled",
+            "sellerIcon": {
+              "sellerIconId": "ic_m_premium_circle_filled",
+              "sellerIconBgColor": "#ffffff",
+              "tintColor": "#ffb800"
+            },
+            "qtyTextDisabled": true,
+            "buttonSizeMode": "SIZE_MODE_FILL"
+          }
+        }
+      },
+      "skuId": "1595107086",
+      "tileDefer": 4,
+      "tileImage": {
+        "imageRatio": "1:1",
+        "pinchToZoomTrackingInfo": {
+          "click": {
+            "actionType": "imagePinch",
+            "key": "QktJ5R1Y3c70P6kphJYBlVOI4MqkoqCPnMw3zFWvL1L4"
+          },
+          "view": {
+            "actionType": "onboardingView",
+            "key": "QktJ5R1Y3c70P6kphJYBlVOI4MqkoqCPnMw3zFWvL1L4"
+          }
+        },
+        "items": [
+          {
+            "type": "image",
+            "image": {
+              "link": "https:\u002F\u002Fcdn1.ozone.ru\u002Fs3\u002Fmultimedia-1-g\u002F7048976272.jpg",
+              "contentMode": "SCALE_ASPECT_FIT"
+            }
+          },
+          {
+            "type": "image",
+            "image": {
+              "link": "https:\u002F\u002Fcdn1.ozone.ru\u002Fs3\u002Fmultimedia-1-t\u002F7056988481.jpg",
+              "contentMode": "SCALE_ASPECT_FIT"
+            }
+          },
+          {
+            "type": "image",
+            "image": {
+              "link": "https:\u002F\u002Fcdn1.ozone.ru\u002Fs3\u002Fmultimedia-1-2\u002F7056986366.jpg",
+              "contentMode": "SCALE_ASPECT_FIT"
+            }
+          },
+          {
+            "type": "image",
+            "image": {
+              "link": "https:\u002F\u002Fcdn1.ozone.ru\u002Fs3\u002Fmultimedia-1-y\u002F7056986362.jpg",
+              "contentMode": "SCALE_ASPECT_FIT"
+            }
+          },
+          {
+            "type": "image",
+            "image": {
+              "link": "https:\u002F\u002Fcdn1.ozone.ru\u002Fs3\u002Fmultimedia-1-1\u002F7056986365.jpg",
+              "contentMode": "SCALE_ASPECT_FIT"
+            }
+          },
+          {
+            "type": "image",
+            "image": {
+              "link": "https:\u002F\u002Fcdn1.ozone.ru\u002Fs3\u002Fmultimedia-1-x\u002F7056986361.jpg",
+              "contentMode": "SCALE_ASPECT_FIT"
+            }
+          }
+        ],
+        "leftBottomBadge": {
+          "text": "Постоплата",
+          "image": "ic_m_money_to_card_filled",
+          "tintColor": "textLightKey",
+          "iconTintColor": "graphicLightKey",
+          "backgroundColor": "bgOzonPrimary",
+          "testInfo": {
+            "automatizationId": "badge-postPayment"
+          },
+          "theme": "STYLE_TYPE_MEDIUM",
+          "iconPosition": "ICON_POSITION_LEFT"
+        }
+      },
+      "topRightButtons": [
+        {
+          "type": "favoriteProductMoleculeV2",
+          "favoriteProductMoleculeV2": {
+            "id": "1595107086",
+            "isFav": false,
+            "favListsLink": "ozon:\u002F\u002Fmodal\u002FfavoritesListsSelect?sku=1595107086",
+            "trackingInfo": {
+              "click": {
+                "actionType": "favorite",
+                "key": "QktJ5R1Y3c70P6kphJYBlVOI4MqkoqCPnMw3zFWvL1L4"
+              }
+            },
+            "testInfo": {
+              "favoriteButton": {
+                "automatizationId": "favorite-button"
+              },
+              "unFavoriteButton": {
+                "automatizationId": "unfavorite-button"
+              }
+            }
+          }
+        }
+      ],
+      "trackingInfo": {
+        "aux_click": {
+          "actionType": "aux_click",
+          "key": "QktJ5R1Y3c70P6kphJYBlVOI4MqkoqCPnMw3zFWvL1L4"
+        },
+        "click": {
+          "actionType": "click",
+          "key": "QktJ5R1Y3c70P6kphJYBlVOI4MqkoqCPnMw3zFWvL1L4"
+        },
+        "right_click": {
+          "actionType": "right_click",
+          "key": "QktJ5R1Y3c70P6kphJYBlVOI4MqkoqCPnMw3zFWvL1L4"
+        },
+        "view": {
+          "actionType": "view",
+          "key": "QktJ5R1Y3c70P6kphJYBlVOI4MqkoqCPnMw3zFWvL1L4"
+        }
+      }
+    }
+  ],
+  "templates": null,
+  "cols": 12,
+  "imageHeight": 350,
+  "page": 1
+}

@@ -107,7 +107,7 @@ def scrape_wildberries(query):
                     continue
 
             current_page += 1
-            time.sleep(1) 
+            time.sleep(1)
 
     except Exception as e:
         logger.error(f"Error during scraping: {e}")
@@ -116,25 +116,3 @@ def scrape_wildberries(query):
         logger.info("Selenium driver closed")
 
     return products
-
-def save_to_json(products):
-    """Save products to wbsearch.json."""
-    try:
-        with open("wbsearch.json", "w", encoding="utf-8") as f:
-            json.dump(products, f, ensure_ascii=False, indent=4)
-        logger.info("Results saved to wbsearch.json")
-    except Exception as e:
-        logger.error(f"Error saving to JSON: {e}")
-
-def main():
-    query = input("Введите название товара для поиска на Wildberries: ")
-    products = scrape_wildberries(query)
-    
-    if products:
-        save_to_json(products)
-        logger.info(f"Found and saved {len(products)} products")
-    else:
-        logger.info("No products found.")
-
-if __name__ == "__main__":
-    main()

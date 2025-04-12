@@ -144,7 +144,6 @@ def scrape_ozon(query):
                     product["link"] = href if href and "/product/" in href else None
                 except:
                     try:
-                        # Альтернативный поиск любой ссылки в карточке
                         link_elem = tile.find_element(By.CSS_SELECTOR, "a")
                         href = link_elem.get_attribute("href")
                         product["link"] = href if href and "/product/" in href else None
@@ -154,14 +153,12 @@ def scrape_ozon(query):
                 # Артикул
                 if product["link"]:
                     try:
-                        # Извлекаем ID из ссылки (например, /product/1855045065)
                         article_id = product["link"].split("/product/")[-1].split("-")[0].split("?")[0]
                         product["article"] = article_id if article_id.isdigit() else None
                     except:
                         pass
                 else:
                     try:
-                        # Проверяем атрибуты data-sku или data-product-id
                         article_elem = tile.find_element(By.CSS_SELECTOR, "div[data-widget='webProduct']")
                         article_id = article_elem.get_attribute("data-sku") or article_elem.get_attribute("data-product-id")
                         product["article"] = article_id if article_id and article_id.isdigit() else None
@@ -196,22 +193,3 @@ def scrape_ozon(query):
     logger.info("Selenium driver closed")
 
     return products
-
-def save_to_json(products):
-    """Save products to ozonparse.json."""
-    try:
-        with open("ozonparse.json", "w", encoding="utf-8") as f:
-            json.dump(products, f, ensure_ascii=False, indent=4)
-        logger.info("Results saved to ozonparse.json")
-    except Exception as e:
-        logger.error(f"Error saving to JSON: {e}")
-
-def main():
-    query = input("Введите название товара для поиска на Ozon: ")
-    products = scrape_ozon(query)
-    
-    save_to_json(products)
-    logger.info(f"Found and saved {len(products)} products")
-
-if __name__ == "__main__":
-    main()

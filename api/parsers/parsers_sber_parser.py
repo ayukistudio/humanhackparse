@@ -21,6 +21,7 @@ logger = logging.getLogger()
 def setup_selenium(proxy=None):
     """Инициализация Selenium с опциональным прокси."""
     options = Options()
+    options.add_argument("--headless=new")
     options.add_argument("--disable-gpu")
     options.add_argument("--no-sandbox")
     options.add_argument("--disable-dev-shm-usage")
@@ -49,7 +50,7 @@ def setup_selenium(proxy=None):
     options.add_argument("--disable-web-security")
     options.add_argument(
         "user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
-        "(KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+       	"(KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
     )
     options.add_experimental_option("excludeSwitches", ["enable-automation"])
     options.add_experimental_option('useAutomationExtension', False)
@@ -140,14 +141,14 @@ def scrape_sbermegamarket(query):
         return []
 
     encoded_query = query.replace(" ", "%20")
-    base_url = f"https://megamarket.ru/catalog/noutbuki/?related_search={encoded_query}"
+    base_url = f"https://megamarket.ru/catalog/?q={encoded_query}"
     logger.info(f"Запуск скрапинга для запроса: {query}")
 
     products = []
     max_pages = 5
     current_page = 1
     start_time = time.time()
-    max_duration = 600
+    max_duration = 60
     max_retries = 1
 
     while current_page <= max_pages:
@@ -266,21 +267,3 @@ def scrape_sbermegamarket(query):
         pass
 
     return products
-
-def save_to_json(products):
-    """Сохранение результатов в файл sberparse.json."""
-    try:
-        with open("sberparse.json", "w", encoding="utf-8") as f:
-            json.dump(products, f, ensure_ascii=False, indent=4)
-        logger.info("Результаты сохранены в файл sberparse.json")
-    except Exception as e:
-        logger.error(f"Ошибка при сохранении в JSON: {e}")
-
-def main():
-    query = input("Введите название товара для поиска на СберМегаМаркете: ")
-    products = scrape_sbermegamarket(query)
-    save_to_json(products)
-    logger.info(f"Найдено и сохранено {len(products)} товаров")
-
-if __name__ == "__main__":
-    main()

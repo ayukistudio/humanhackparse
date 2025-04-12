@@ -21,13 +21,13 @@ from parsers.parsers_ozon_parser import scrape_ozon
 from parsers.parsers_sber_parser import scrape_sbermegamarket
 from parsers.parsers_wb_parser import scrape_wildberries
 
-# Логирование с самого начала
+# Configure logging with explicit UTF-8 encoding
 logging.basicConfig(
     level=logging.DEBUG,
     format='%(asctime)s | %(levelname)s | %(module)s:%(lineno)d | %(message)s',
     datefmt='%Y-%m-%d %H:%M:%S',
     handlers=[
-        logging.FileHandler("api_debug.log"),
+        logging.FileHandler("api_debug.log", encoding="utf-8"),
         logging.StreamHandler(sys.stdout)
     ]
 )
@@ -251,6 +251,7 @@ def extract_title_requests(url):
     try:
         logger.debug(f"Отправка HTTP-запроса к {url}")
         response = requests.get(url, headers=headers, timeout=10)
+        response.encoding = "utf-8"  # Force UTF-8 decoding
         response.raise_for_status()
         logger.debug("Ответ получен, парсинг HTML")
         soup = BeautifulSoup(response.text, "html.parser")
@@ -330,6 +331,9 @@ def extract_title_requests(url):
         return None
     except requests.exceptions.RequestException as e:
         logger.error(f"Ошибка HTTP-запроса для {url}: {str(e)}", exc_info=True)
+        return None
+    except UnicodeDecodeError as e:
+        logger.error(f"Ошибка декодирования UTF-8 для {url}: {str(e)}", exc_info=True)
         return None
     except Exception as e:
         logger.error(f"Общая ошибка при извлечении через requests: {str(e)}", exc_info=True)

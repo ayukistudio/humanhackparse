@@ -53,7 +53,7 @@ Sauce Tracker автоматизирует процесс отслеживани
    ![Отображение карточки товара](https://github.com/ayukistudio/humanhackparse/blob/b6b64cc80f6c3c2ecf85da7f728a174f638294e4/screenshots/view/scr5.png)
    *Отображение карточки товара*
 
-   ![Уведомление в тг-боте](https://github.com/ayukistudio/humanhackparse/blob/b6b64cc80f6c3c2ecf85da7f728a174f638294e4/screenshots/view/scr9.png)
+   ![Уведомление в тг-боте](https://github.com/ayukistudio/humanhackparse/blob/6d408811f4513841c3ba2bf1e51b63a093ee60da/screenshots/view/scr9.jpg)
    *Уведомление о снижении цены на товар в Telegram-боте*
    
 3. **Тестирование**:   

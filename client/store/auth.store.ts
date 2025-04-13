@@ -1,4 +1,5 @@
 interface IAuthStore {
+  $id: string
   email: string
   name: string
   status: boolean
@@ -6,6 +7,7 @@ interface IAuthStore {
 
 const defaultValue: {user: IAuthStore} = {
   user: {
+    $id: '',
     email: '',
     name: '',
     status: false
@@ -15,7 +17,8 @@ const defaultValue: {user: IAuthStore} = {
 export const useAuthStore = defineStore('auth', {
   state: () => defaultValue,
   getters: {
-    isAuth: state => state.user.status
+    isAuth: state => state.user.status,
+    user_id: state => state.user.$id
   },
   actions: {
     clear() {
@@ -37,3 +40,15 @@ export const useIsLoadingStore = defineStore('isLoading', {
     }
   }
 })
+
+export const useIsLoadingStoreProd = defineStore('useIsLoadingProd', {
+  state: () => ({
+    isLoading: false
+  }),
+  actions: {
+    set(data: boolean) {
+      this.$patch({isLoading: data})
+    }
+  }
+})
+

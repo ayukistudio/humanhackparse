@@ -54,6 +54,13 @@ Sauce Tracker автоматизирует процесс отслеживани
      
   ![Поиск товара по ссылке](https://github.com/ayukistudio/humanhackparse/blob/b6b64cc80f6c3c2ecf85da7f728a174f638294e4/screenshots/view/scr1.png)
    *Поиск товара по ссылке*
+
+   ![Поиск товара по ссылке](https://github.com/ayukistudio/humanhackparse/blob/b6b64cc80f6c3c2ecf85da7f728a174f638294e4/screenshots/view/scr3.png)
+   *Результаты поиска*
+
+   ![Отображение карточки товара](https://github.com/ayukistudio/humanhackparse/blob/b6b64cc80f6c3c2ecf85da7f728a174f638294e4/screenshots/view/scr5.png)
+   *Отображение карточки товара*
+   
 3. **Тестирование**:  
    - Протестировали парсинг на 15 000 товаров.  
    - Проверили точность обновления цен и доставку уведомлений.  

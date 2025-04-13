@@ -21,5 +21,12 @@ export default defineNuxtConfig({
   ssr: false,
   pinia: {
     storesDirs: ['./store/**']
-  }
+  },
+  nitro: {
+    routeRules: {
+      "/api/**": {
+        proxy: `http://localhost:8000/**`
+      },
+    }
+  },
 })

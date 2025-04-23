@@ -21,7 +21,6 @@ from parsers.parsers_ozon_parser import scrape_ozon
 from parsers.parsers_sber_parser import scrape_sbermegamarket
 from parsers.parsers_wb_parser import scrape_wildberries
 
-# Configure logging with explicit UTF-8 encoding
 logging.basicConfig(
     level=logging.DEBUG,
     format='%(asctime)s | %(levelname)s | %(module)s:%(lineno)d | %(message)s',
@@ -53,7 +52,6 @@ class ScrapeResponse(BaseModel):
     wildberries: list
 
 def check_environment():
-    """Проверка окружения."""
     logger.debug("Проверка окружения")
     try:
         logger.info(f"Python version: {sys.version}")
@@ -66,7 +64,6 @@ def check_environment():
         return False
 
 def setup_selenium():
-    """Инициализация Selenium."""
     logger.debug("Начало настройки Selenium WebDriver")
     options = Options()
     options.add_argument("--headless=new")
@@ -107,7 +104,6 @@ def setup_selenium():
         return None
 
 def scroll_page(driver):
-    """Прокрутка страницы для загрузки контента."""
     logger.debug("Начало прокрутки страницы")
     try:
         last_height = driver.execute_script("return document.body.scrollHeight")
@@ -124,7 +120,6 @@ def scroll_page(driver):
         logger.error(f"Ошибка при прокрутке страницы: {str(e)}", exc_info=True)
 
 def clean_title(title):
-    """Очистка названия от мусора."""
     logger.debug(f"Очистка заголовка: {title}")
     if not title:
         logger.warning("Заголовок пустой")
@@ -136,7 +131,6 @@ def clean_title(title):
     return cleaned
 
 def extract_title_selenium(driver, url):
-    """Извлечение названия через Selenium."""
     logger.info(f"Начало извлечения названия через Selenium для URL: {url}")
     try:
         logger.debug(f"Загрузка страницы: {url}")
@@ -242,7 +236,6 @@ def extract_title_selenium(driver, url):
         return None
 
 def extract_title_requests(url):
-    """Извлечение названия через requests."""
     logger.info(f"Начало извлечения названия через requests для URL: {url}")
     headers = {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
@@ -341,7 +334,6 @@ def extract_title_requests(url):
 
 @app.get("/health")
 async def health_check():
-    """Проверка работоспособности API."""
     logger.info("Получен запрос на проверку работоспособности")
     logger.debug("Отправка ответа: status=healthy")
     return {"status": "healthy", "message": "API is running"}
@@ -352,13 +344,11 @@ async def scrape_products(request: URLRequest):
     logger.info(f"Получен запрос на обработку URL: {request.url}")
     start_time = time.time()
 
-    # Валидация URL
     logger.debug("Проверка URL на корректность")
     if not request.url.startswith(("http://", "https://")):
         logger.error("Некорректный URL: отсутствует схема http(s)")
         raise HTTPException(status_code=400, detail="URL должен начинаться с http:// или https://")
-
-    # Извлечение названия
+        
     logger.debug("Попытка извлечения названия через requests")
     title = extract_title_requests(request.url)
     if not title:
@@ -376,7 +366,6 @@ async def scrape_products(request: URLRequest):
 
     logger.info(f"Извлеченное название: {title}")
 
-    # Запуск парсеров
     logger.debug("Запуск парсеров в многопоточном режиме")
     with ThreadPoolExecutor(max_workers=3) as executor:
         logger.debug("Отправка задачи для Ozon")

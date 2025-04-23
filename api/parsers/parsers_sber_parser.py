@@ -10,7 +10,6 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium.common.exceptions import TimeoutException, WebDriverException
 
-# Настройка логирования
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s | %(levelname)s | %(message)s',
@@ -80,7 +79,6 @@ def setup_selenium(proxy=None):
         return None
 
 def scroll_to_bottom(driver, max_scroll_time=10):
-    """Полная прокрутка страницы до конца."""
     start_time = time.time()
     try:
         last_height = driver.execute_script("return document.body.scrollHeight")
@@ -96,7 +94,6 @@ def scroll_to_bottom(driver, max_scroll_time=10):
         logger.error(f"Ошибка при прокрутке страницы: {e}")
 
 def handle_popups(driver):
-    """Обработка всплывающих окон."""
     try:
         popup_selectors = [
             "button[class*='close'], button[class*='decline'], button[class*='cancel']",
@@ -118,7 +115,6 @@ def handle_popups(driver):
         logger.debug(f"Ошибка при обработке всплывающих окон: {e}")
 
 def simulate_human_behavior(driver):
-    """Имитация человеческого поведения."""
     try:
         actions = ActionChains(driver)
         for _ in range(random.randint(8, 12)):

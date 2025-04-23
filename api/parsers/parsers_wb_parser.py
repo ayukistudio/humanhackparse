@@ -21,7 +21,6 @@ logging.basicConfig(
 logger = logging.getLogger()
 
 def setup_selenium():
-    """Initialize Selenium with headless Chrome."""
     options = Options()
     options.add_argument("--headless=new")
     options.add_argument("--disable-gpu")
@@ -41,7 +40,6 @@ def setup_selenium():
         return None
 
 def fetch_placeholder_images(query):
-    """Fetch placeholder image URLs from one Google Images search for the query."""
     driver = setup_selenium()
     if not driver:
         logger.error("Cannot proceed with Google Images scrape without Selenium")
@@ -79,7 +77,6 @@ def fetch_placeholder_images(query):
             pass
 
 def scrape_wildberries(query):
-    """Scrape Wildberries search results for the query across 5 pages."""
     driver = setup_selenium()
     if not driver:
         logger.error("Cannot proceed without Selenium")
@@ -126,7 +123,7 @@ def scrape_wildberries(query):
                         By.CSS_SELECTOR, "span.product-card__name"
                     )
                     title = title_elem.text.strip() if title_elem else ""
-                    product["title"] = title.lstrip("/ ").strip()  # Remove leading "/ "
+                    product["title"] = title.lstrip("/ ").strip() 
 
                     price_elem = card.find_element(
                         By.CSS_SELECTOR, "ins.price__lower-price"
@@ -136,7 +133,7 @@ def scrape_wildberries(query):
                     link_elem = card.find_element(By.CSS_SELECTOR, "a.product-card__link")
                     product["link"] = link_elem.get_attribute("href") if link_elem else ""
 
-                    product["image"] = ""  # Placeholder, filled later
+                    product["image"] = ""
 
                     if product["article"] and product["title"] and product["price"] and product["link"]:
                         products.append(product)
@@ -162,7 +159,6 @@ def scrape_wildberries(query):
         driver.quit()
         logger.info("Selenium driver closed")
 
-    # Fetch placeholder images once and assign to all products
     if products:
         logger.info("Fetching placeholder images for all products")
         placeholder_images = fetch_placeholder_images(query)

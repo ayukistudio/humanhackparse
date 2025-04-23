@@ -21,9 +21,9 @@ import json
 import time
 import random
 
-# Configure logging
+
 logging.basicConfig(
-    level=logging.DEBUG,  # Increased verbosity for debugging
+    level=logging.DEBUG,
     format='%(asctime)s | %(levelname)s | %(module)s:%(lineno)d | %(message)s',
     datefmt='%Y-%m-%d %H:%M:%S',
     handlers=[
@@ -33,10 +33,8 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-# FastAPI app
 app = FastAPI()
 
-# Appwrite configuration
 APPWRITE_ENDPOINT = "https://cloud.appwrite.io/v1"
 APPWRITE_PROJECT_ID = "nuxt-crm-kanban"
 APPWRITE_API_KEY = "standard_58904d3be75745d6d27a775847758d4f34cdd6018421e5df58b7fa72546d75deba9d7537d97bb5fd2dd92173e23504f518c48c42e28d69febdb068ed183a43ea45448463810a76969062a560a0b79dce8a42cc4f07670523e2e1d04dc6c78208545a49e7e908d3703a8213c27021fd6e006ec3dcf3d71bf74d3b77cc0cafd31a"
@@ -55,7 +53,6 @@ class ProductRequest(BaseModel):
     user_id: str
 
 def setup_selenium():
-    """Инициализация Selenium с дополнительным логированием."""
     logger.debug("Начало настройки Selenium WebDriver")
     options = Options()
     options.add_argument("--headless")
@@ -96,7 +93,6 @@ def setup_selenium():
         return None
 
 def scroll_page(driver):
-    """Прокрутка страницы для загрузки контента с логированием этапов."""
     logger.debug("Начало прокрутки страницы")
     try:
         last_height = driver.execute_script("return document.body.scrollHeight")
@@ -115,7 +111,6 @@ def scroll_page(driver):
         logger.error(f"Ошибка при прокрутке страницы: {str(e)}", exc_info=True)
 
 def clean_title(title):
-    """Очистка названия от мусора с логированием."""
     if not title:
         logger.debug("Пустое название, возвращается None")
         return None
@@ -127,7 +122,6 @@ def clean_title(title):
     return cleaned
 
 def extract_title_selenium(url: str) -> Optional[str]:
-    """Извлечение названия через Selenium с подробным логированием."""
     logger.info(f"Начало извлечения названия через Selenium для URL: {url}")
     driver = setup_selenium()
     if not driver:
@@ -146,7 +140,6 @@ def extract_title_selenium(url: str) -> Optional[str]:
         logger.debug("Страница полностью загружена")
         scroll_page(driver)
 
-        # 1. Мета-теги
         meta_selectors = [
             "meta[property='og:title']",
             "meta[name='title']",
@@ -165,7 +158,6 @@ def extract_title_selenium(url: str) -> Optional[str]:
                 logger.debug(f"Селектор {selector} не найден")
                 continue
 
-        # 2. Заголовок страницы
         try:
             logger.debug("Проверка тега <title>")
             title = driver.find_element(By.CSS_SELECTOR, "title").text
@@ -175,7 +167,6 @@ def extract_title_selenium(url: str) -> Optional[str]:
         except:
             logger.debug("Тег <title> не найден")
 
-        # 3. Заголовки h1, h2
         for tag in ["h1", "h2"]:
             try:
                 logger.debug(f"Проверка тега {tag}")
@@ -187,7 +178,6 @@ def extract_title_selenium(url: str) -> Optional[str]:
                 logger.debug(f"Тег {tag} не найден")
                 continue
 
-        # 4. Классы product-title, name и т.д.
         class_selectors = [
             "[class*='product-title']",
             "[class*='item-title']",
@@ -206,7 +196,6 @@ def extract_title_selenium(url: str) -> Optional[str]:
                 logger.debug(f"Селектор класса {selector} не найден")
                 continue
 
-        # 5. JSON-LD
         try:
             logger.debug("Проверка JSON-LD")
             scripts = driver.find_elements(By.CSS_SELECTOR, "script[type='application/ld+json']")
@@ -223,7 +212,6 @@ def extract_title_selenium(url: str) -> Optional[str]:
         except:
             logger.debug("JSON-LD не найден или невалидный")
 
-        # 6. XPath как запасной
         try:
             logger.debug("Проверка через XPath")
             elem = driver.find_element(By.XPATH, "//*[contains(@class, 'title') or contains(@class, 'name')]")
@@ -253,7 +241,6 @@ def extract_title_selenium(url: str) -> Optional[str]:
             logger.error("Ошибка при закрытии Selenium")
 
 def extract_title_requests(url: str) -> Optional[str]:
-    """Извлечение названия через requests с подробным логированием."""
     logger.info(f"Начало извлечения названия через requests для URL: {url}")
     headers = {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
@@ -267,8 +254,7 @@ def extract_title_requests(url: str) -> Optional[str]:
         logger.debug(f"Время ответа HTTP: {time.time() - start_time:.2f} секунд")
         logger.debug("Страница успешно загружена через requests")
         soup = BeautifulSoup(response.text, "html.parser")
-
-        # 1. Мета-теги
+        
         meta_tags = [
             ("meta[property='og:title']", "content"),
             ("meta[name='title']", "content"),
@@ -283,7 +269,6 @@ def extract_title_requests(url: str) -> Optional[str]:
                 return clean_title(tag.get(attr))
             logger.debug(f"Мета-тег {selector} не найден")
 
-        # 2. Заголовок страницы
         logger.debug("Проверка тега <title>")
         title_tag = soup.select_one("title")
         if title_tag and title_tag.text:
@@ -291,7 +276,6 @@ def extract_title_requests(url: str) -> Optional[str]:
             return clean_title(title_tag.text)
         logger.debug("Тег <title> не найден")
 
-        # 3. Заголовки h1, h2
         for tag in ["h1", "h2"]:
             logger.debug(f"Проверка тега {tag}")
             header = soup.select_one(tag)
@@ -300,7 +284,6 @@ def extract_title_requests(url: str) -> Optional[str]:
                 return clean_title(header.text)
             logger.debug(f"Тег {tag} не найден")
 
-        # 4. Классы
         class_selectors = [
             "[class*='product-title']",
             "[class*='item-title']",
@@ -319,7 +302,6 @@ def extract_title_requests(url: str) -> Optional[str]:
                 logger.debug(f"Селектор класса {selector} не найден")
                 continue
 
-        # 5. JSON-LD
         logger.debug("Проверка JSON-LD")
         scripts = soup.select("script[type='application/ld+json']")
         for script in scripts:
@@ -402,7 +384,7 @@ async def update_price_periodically(url: str, user_id: str):
                 'date': current_time.strftime('%Y-%m-%d'),
                 'time': current_time.strftime('%H:%M:%S'),
                 'price': price,
-                'title': title or ''  # Empty string if title is None
+                'title': title or ''
             }
             try:
                 databases.create_document(
@@ -415,10 +397,8 @@ async def update_price_periodically(url: str, user_id: str):
             except Exception as e:
                 logger.error(f"Error saving to Appwrite for URL {url}, user_id: {user_id}: {e}", exc_info=True)
         
-        # Wait 30 seconds
         await asyncio.sleep(1 * 60 * 60)
 
-# Lifespan event handler
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     try:
@@ -481,7 +461,6 @@ async def lifespan(app: FastAPI):
     yield
     logger.info("Shutting down...")
 
-# Attach lifespan to app
 app.lifespan = lifespan
 
 @app.post("/track-price")
@@ -504,7 +483,7 @@ async def track_price(request: ProductRequest, background_tasks: BackgroundTasks
         'date': current_time.strftime('%Y-%m-%d'),
         'time': current_time.strftime('%H:%M:%S'),
         'price': price,
-        'title': title or ''  # Empty string if title is None
+        'title': title or '' 
     }
 
     try:

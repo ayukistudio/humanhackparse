@@ -9,7 +9,6 @@ import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 
-# Configure logging
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s | %(levelname)s | %(module)s:%(lineno)d | %(message)s',
@@ -21,20 +20,13 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-# FastAPI app
 app = FastAPI(title="Price Alert API")
 
-# Telegram Bot configuration
 BOT_TOKEN = "7618020293:AAHINb-E14iVQGH57ObNdWN7oRZiVcNmLFM"
 TELEGRAM_API_URL = f"https://api.telegram.org/bot{BOT_TOKEN}"
 
-# Gmail configuration
-# 1. Включи двухфакторную аутентификацию в Google: https://myaccount.google.com/security
-# 2. Перейди в "Пароли приложений": https://myaccount.google.com/security -> "App passwords"
-# 3. Выбери "Mail" и "Other", введи имя (например, "PriceAlert"), получи 16-значный пароль (например, abcd efgh ijkl mnop)
-# 4. Вставь свой Gmail и пароль приложения ниже (пароль без пробелов)
-SENDER_EMAIL = "your_gmail@gmail.com"  # Замени на свой Gmail
-SENDER_PASSWORD = "your_app_password"  # Замени на пароль приложения (16 символов без пробелов)
+SENDER_EMAIL = "your_gmail@gmail.com"
+SENDER_PASSWORD = "your_app_password"
 
 class PriceAlertRequest(BaseModel):
     username: str
@@ -42,8 +34,8 @@ class PriceAlertRequest(BaseModel):
     new_price: float
     url: str
     image: str
-    userid: str  # Telegram chat_id
-    email: str   # Email получателя
+    userid: str 
+    email: str 
 
 class PriceAlertResponse(BaseModel):
     message: str
@@ -74,11 +66,9 @@ async def validate_image_url(image_url: str) -> bool:
     before_sleep=lambda retry_state: logger.debug(f"Повторная попытка {retry_state.attempt_number} после таймаута")
 )
 async def send_to_telegram(chat_id: str, message: str, image_url: str):
-    """Отправляет сообщение с изображением в Telegram с повторными попытками."""
     logger.debug(f"Отправка сообщения в Telegram для chat_id: {chat_id}")
     async with httpx.AsyncClient(timeout=30.0) as client:
         try:
-            # Сначала отправляем изображение
             photo_payload = {
                 "chat_id": chat_id,
                 "photo": image_url,
@@ -88,7 +78,6 @@ async def send_to_telegram(chat_id: str, message: str, image_url: str):
             photo_response.raise_for_status()
             logger.debug("Изображение успешно отправлено")
 
-            # Затем отправляем текстовое сообщение
             text_payload = {
                 "chat_id": chat_id,
                 "text": message,
@@ -108,10 +97,8 @@ async def send_to_telegram(chat_id: str, message: str, image_url: str):
             raise HTTPException(status_code=500, detail=f"Ошибка отправки в Telegram: {str(e)}")
 
 async def send_to_email(recipient_email: str, request: PriceAlertRequest):
-    """Отправляет уведомление на почту через Gmail SMTP."""
     logger.debug(f"Отправка email на {recipient_email}")
     try:
-        # Формирование сообщения для email
         email_subject = f"Price Drop Alert for {request.username}"
         email_message = (
             f"Dear {request.username},\n\n"
@@ -121,15 +108,13 @@ async def send_to_email(recipient_email: str, request: PriceAlertRequest):
             f"Check it out here: {request.url}\n\n"
             f"Best,\nSauce Tracker Team"
         )
-
-        # Настройка сообщения
+        
         msg = MIMEMultipart()
         msg['From'] = SENDER_EMAIL
         msg['To'] = recipient_email
         msg['Subject'] = email_subject
         msg.attach(MIMEText(email_message, 'plain'))
-
-        # Подключение к Gmail SMTP
+        
         with smtplib.SMTP_SSL('smtp.gmail.com', 465) as server:
             server.login(SENDER_EMAIL, SENDER_PASSWORD)
             server.sendmail(SENDER_EMAIL, recipient_email, msg.as_string())
@@ -144,7 +129,6 @@ def format_telegram_message(request: PriceAlertRequest) -> str:
     """Формирует отформатированное сообщение для Telegram."""
     logger.debug(f"Формирование сообщения для username: {request.username}, url: {request.url}")
     
-    # Экранирование специальных символов для Markdown V2
     def escape_markdown(text):
         chars = ['_', '*', '[', ']', '(', ')', '~', '`', '>', '#', '+', '-', '=', '|', '{', '}', '.', '!']
         for char in chars:
@@ -152,12 +136,11 @@ def format_telegram_message(request: PriceAlertRequest) -> str:
         return text
 
     username = escape_markdown(request.username)
-    # Форматируем цены без запятых, чтобы избежать проблем с экранированием
+    
     old_price = f"{request.old_price:.2f}".replace('.', '\\.')
     new_price = f"{request.new_price:.2f}".replace('.', '\\.')
     url = request.url
 
-    # Формирование сообщения в Markdown V2
     message = (
         f"*{username}*, спешим сообщить, что интересующий вас товар *подешевел\\!* 🎉\n"
         f"Успейте отследить все изменения с помощью *Sauce Tracker*\n\n"
@@ -179,7 +162,6 @@ async def send_telegram_alert(request: PriceAlertRequest):
     """API endpoint для отправки уведомления о снижении цены в Telegram."""
     logger.info(f"Получен POST запрос на Telegram: username={request.username}, url={request.url}, userid={request.userid}")
 
-    # Валидация данных
     if not request.url.startswith(("http://", "https://")):
         logger.error("Некорректный URL: отсутствует схема http(s)")
         raise HTTPException(status_code=400, detail="URL должен начинаться с http:// или https://")
@@ -196,12 +178,10 @@ async def send_telegram_alert(request: PriceAlertRequest):
         logger.error("Цены не могут быть отрицательными")
         raise HTTPException(status_code=400, detail="Цены не могут быть отрицательными")
 
-    # Проверка URL изображения
     if not await validate_image_url(request.image):
         logger.error(f"Невалидный или недоступный URL изображения: {request.image}")
         raise HTTPException(status_code=400, detail="Невалидный или недоступный URL изображения")
 
-    # Формирование и отправка сообщения в Telegram
     try:
         telegram_message = format_telegram_message(request)
         logger.info(f"Сообщение успешно сформировано для username: {request.username}")
@@ -218,10 +198,8 @@ async def send_telegram_alert(request: PriceAlertRequest):
 
 @app.post("/send-email-alert", response_model=PriceAlertResponse)
 async def send_email_alert(request: PriceAlertRequest):
-    """API endpoint для отправки уведомления о снижении цены на почту."""
     logger.info(f"Получен POST запрос на email: username={request.username}, url={request.url}, email={request.email}")
 
-    # Валидация данных
     if not request.url.startswith(("http://", "https://")):
         logger.error("Некорректный URL: отсутствует схема http(s)")
         raise HTTPException(status_code=400, detail="URL должен начинаться с http:// или https://")
@@ -241,13 +219,11 @@ async def send_email_alert(request: PriceAlertRequest):
     if not "@" in request.email or not "." in request.email:
         logger.error(f"Некорректный email: {request.email}")
         raise HTTPException(status_code=400, detail="Некорректный формат email")
-
-    # Проверка URL изображения
+        
     if not await validate_image_url(request.image):
         logger.error(f"Невалидный или недоступный URL изображения: {request.image}")
         raise HTTPException(status_code=400, detail="Невалидный или недоступный URL изображения")
 
-    # Отправка на почту
     try:
         email_message = await send_to_email(request.email, request)
         
